@@ -6,4 +6,4 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Or acess on the web: [antoniocouto.vercel.app](antoniocouto.vercel.app)
+Or acess on the web: [antoniocouto.vercel.app](https://antoniocouto.vercel.app/)
