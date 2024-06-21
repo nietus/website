@@ -31,14 +31,14 @@ export default function HomePage() {
       words: ['Learner', 'Developer', 'Scientist'],
       projectList: [
         {
-          title: "Estoque Master",
-          description: "A project to manage stock efficiently.",
-          link: "https://github.com/nietus/spark_crud",
+          title: 'Estoque Master',
+          description: 'A project to manage stock efficiently.',
+          link: 'https://github.com/nietus/spark_crud',
         },
         {
-          title: "AnimeDB",
-          description: "Use of cryptography algorithms, pattern matching, data structures, and compression in an anime database.",
-          link: "https://github.com/AnimeAEDS3/aeds3",
+          title: 'AnimeDB',
+          description: 'Use of cryptography algorithms, pattern matching, data structures, and compression in an anime database.',
+          link: 'https://github.com/AnimeAEDS3/aeds3',
         },
       ],
       experience: 'Experience',
@@ -59,14 +59,14 @@ export default function HomePage() {
       words: ['Estudante', 'Desenvolvedor', 'Cientista'],
       projectList: [
         {
-          title: "Estoque Master",
-          description: "Um projeto para gerenciar estoque de forma eficiente.",
-          link: "https://github.com/nietus/spark_crud",
+          title: 'Estoque Master',
+          description: 'Um projeto para gerenciar estoque de forma eficiente.',
+          link: 'https://github.com/nietus/spark_crud',
         },
         {
-          title: "AnimeDB",
-          description: "Uso de algoritmos de criptografia, casamento de padrões, estruturas de dados e compactação em um banco de dados de anime.",
-          link: "https://github.com/AnimeAEDS3/aeds3",
+          title: 'AnimeDB',
+          description: 'Uso de algoritmos de criptografia, casamento de padrões, estruturas de dados e compactação em um banco de dados de anime.',
+          link: 'https://github.com/AnimeAEDS3/aeds3',
         },
       ],
       experience: 'Experiência',
@@ -94,8 +94,7 @@ export default function HomePage() {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Antonio Neto's Website</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" />
+        <title>Antonio Neto&apos;s Website</title>
       </Head>
       <div className="relative flex min-h-[100vh] bg-gray-100 animate-fade-in">
         <div className="hidden md:block w-1/4 bg-green-200 p-8 flex flex-col items-center">
