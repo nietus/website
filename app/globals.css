@@ -23,13 +23,12 @@ body {
 .dark body {
   @apply bg-dark text-light;
 }
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-
-/* app/globals.css */
 
 .switch {
   position: relative;
@@ -98,4 +97,23 @@ input:checked + .slider:before {
 
 .rounded-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Prevent user selection on specific elements */
+* {
+  -webkit-user-select: none; /* Safari 3+, Safari on iOS 3+ */
+  user-select: none; /* Prevent text selection on all elements */
 }
