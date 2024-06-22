@@ -17,7 +17,16 @@ const Curriculum = () => {
   const generatePDF = () => {
     const input = document.getElementById("curriculum");
     setIsLoading(true);
-    html2canvas(input, { scale: 2 }).then((canvas) => {
+
+    // Temporarily expand the element height to capture all content
+    const originalHeight = input.style.height;
+    input.style.height = "auto";
+    input.style.maxHeight = "none";
+
+    // Scroll to top before capturing
+    window.scrollTo(0, 0);
+
+    html2canvas(input, { scale: 2, scrollY: -window.scrollY }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF({
         orientation: "portrait",
@@ -30,6 +39,11 @@ const Curriculum = () => {
 
       pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
       pdf.save("Curriculum_Antonio_Neto.pdf");
+      
+      // Restore the original height
+      input.style.height = originalHeight;
+      input.style.maxHeight = "";
+
       setIsLoading(false);
     });
   };
@@ -70,7 +84,7 @@ const Curriculum = () => {
         </div>
         <button
           onClick={generatePDF}
-          className="bg-green-600 dark:bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-700 dark:hover:bg-green-600 transition-transform transform hover:scale-105 duration-300 flex items-center"
+          className="bg-green-600 dark:bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-700 dark:hover:bg-green-600 transition-transform transform hover:scale-105 duration-300 flex items-center hidden md:flex"
         >
           <FaDownload className="mr-2" />
           PDF
@@ -78,7 +92,7 @@ const Curriculum = () => {
       </div>
       <div
         id="curriculum"
-        className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl max-w-3xl w-11/12 h-5/6 md:w-4/6 md:h-4/5 overflow-hidden"
+        className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl max-w-3xl w-11/12 md:w-4/6 h-[85vh] xl:h-[90vh] overflow-auto"
       >
         <div className="flex items-center mb-6">
           <div className="w-20 h-20 relative rounded-full overflow-hidden shadow-lg">
@@ -114,7 +128,17 @@ const Curriculum = () => {
             <ul className="text-lg mb-4 dark:text-gray-300 space-y-2">
               {t.skillsList.map((skill, index) => (
                 <li key={index} className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300">
-                  <span>{skill}</span> {renderStars(4)}
+                  <span>{skill.name}</span> {renderStars(skill.rating)}
+                </li>
+              ))}
+            </ul>
+            <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
+              {t.languages}
+            </h2>
+            <ul className="text-lg mb-4 dark:text-gray-300 space-y-2">
+              {t.languageList.map((language, index) => (
+                <li key={index} className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300">
+                  <span>{language.name}</span> {renderStars(language.rating)}
                 </li>
               ))}
             </ul>

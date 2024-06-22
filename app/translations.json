@@ -2,12 +2,21 @@
   "en": {
     "title": "Antonio Neto",
     "subtitle": "Student at PUC Minas",
+    "welcome": "Hello, World!",
+    "goToCurriculum": "Explore My Curriculum",
+    "iAm": "I am a",
     "aboutMe": "Hi, I am Antonio Neto, a passionate learner and developer. I love working on exciting projects and continuously improving my skills. I like to work with Intelligent Systems and Databases.",
     "education": "Education",
     "degree": "Bachelor of Computer Science (2026/2)",
     "skills": "Skills",
-    "skillsList": ["Java", "Python", "Docker", "Machine Learning"],
+    "skillsList": [
+      { "name": "Java", "rating": 4 },
+      { "name": "Python", "rating": 4 },
+      { "name": "Docker", "rating": 3 },
+      { "name": "Machine Learning", "rating": 3 }
+    ],
     "projects": "Projects",
+    "words": ["Student", "Developer", "Scientist"],
     "projectList": [
       {
         "title": "Estoque Master",
@@ -21,17 +30,32 @@
       }
     ],
     "experience": "Experience",
-    "experienceDetails": "Open-Source and College Projects"
+    "experienceDetails": "Open-Source and College Projects",
+    "languages": "Languages",
+    "languageList": [
+      { "name": "English", "rating": 5 },
+      { "name": "Portuguese", "rating": 5 },
+      { "name": "Chinese (zh)", "rating": 2 }
+    ]
   },
   "pt": {
     "title": "Antonio Neto",
     "subtitle": "Estudante na PUC Minas",
+    "welcome": "Olá, Mundo!",
+    "goToCurriculum": "Explore Meu Currículo",
+    "iAm": "Eu sou um",
     "aboutMe": "Oi, eu sou Antonio Neto, um estudante e desenvolvedor apaixonado. Adoro trabalhar em projetos empolgantes e melhorar continuamente minhas habilidades. Gosto de trabalhar com Sistemas Inteligentes e Bancos de Dados.",
     "education": "Educação",
     "degree": "Bacharel em Ciência da Computação (2026/2)",
     "skills": "Habilidades",
-    "skillsList": ["Java", "Python", "Docker", "Machine Learning"],
+    "skillsList": [
+      { "name": "Java", "rating": 4 },
+      { "name": "Python", "rating": 4 },
+      { "name": "Docker", "rating": 3 },
+      { "name": "Machine Learning", "rating": 3 }
+    ],
     "projects": "Projetos",
+    "words": ["Estudante", "Desenvolvedor", "Cientista"],
     "projectList": [
       {
         "title": "Estoque Master",
@@ -45,6 +69,12 @@
       }
     ],
     "experience": "Experiência",
-    "experienceDetails": "Open-Source e projetos de faculdade"
+    "experienceDetails": "Open-Source e projetos de faculdade",
+    "languages": "Idiomas",
+    "languageList": [
+      { "name": "Inglês", "rating": 5 },
+      { "name": "Português", "rating": 5 },
+      { "name": "Chinês (zh)", "rating": 2 }
+    ]
   }
 }

@@ -10,69 +10,11 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FlagIcon } from 'react-flag-kit';
+import translations from './translations.json'; // Import translations directly
 
 export default function HomePage() {
   const [language, setLanguage] = useState('en');
   const [key, setKey] = useState(0);
-
-  const translations = {
-    en: {
-      welcome: 'Hello, World!',
-      goToCurriculum: 'Explore My Curriculum',
-      iAm: 'I am a',
-      aboutMe: 'Hi, I am Antonio Neto, a passionate student and developer. I love working on exciting projects and continuously improving my skills. I like to work with Intelligent Systems and Databases.',
-      education: 'Education',
-      degree: 'Bachelor of Computer Science (2026/2)',
-      skills: 'Skills',
-      skillsList: [
-        'Java', 'Python', 'Docker', 'Machine Learning'
-      ],
-      projects: 'Projects',
-      words: ['Student', 'Developer', 'Scientist'],
-      projectList: [
-        {
-          title: "Estoque Master",
-          description: "A project to manage stock efficiently.",
-          link: "https://github.com/nietus/spark_crud",
-        },
-        {
-          title: "AnimeDB",
-          description: "Use of cryptography algorithms, pattern matching, data structures, and compression in an anime database.",
-          link: "https://github.com/AnimeAEDS3/aeds3",
-        },
-      ],
-      experience: 'Experience',
-      experienceDetails: 'Open-Source and College Projects',
-    },
-    pt: {
-      welcome: 'Olá, Mundo!',
-      goToCurriculum: 'Explore Meu Currículo',
-      iAm: 'Eu sou um',
-      aboutMe: 'Oi, eu sou Antonio Neto, um estudante e desenvolvedor apaixonado. Adoro trabalhar em projetos empolgantes e melhorar continuamente minhas habilidades. Gosto de trabalhar com Sistemas Inteligentes e Bancos de Dados.',
-      education: 'Educação',
-      degree: 'Bacharel em Ciência da Computação (2026/2)',
-      skills: 'Habilidades',
-      skillsList: [
-        'Java', 'Python', 'Docker', 'Machine Learning'
-      ],
-      projects: 'Projetos',
-      words: ['Estudante', 'Desenvolvedor', 'Cientista'],
-      projectList: [
-        {
-          title: "Estoque Master",
-          description: "Um projeto para gerenciar estoque de forma eficiente.",
-          link: "https://github.com/nietus/spark_crud",
-        },
-        {
-          title: "AnimeDB",
-          description: "Uso de algoritmos de criptografia, casamento de padrões, estruturas de dados e compactação em um banco de dados de anime.",
-          link: "https://github.com/AnimeAEDS3/aeds3",
-        },
-      ],
-      experience: 'Experiência',
-      experienceDetails: 'Open-Source e projetos de faculdade',
-    },
-  };
 
   const t = translations[language];
   const [text] = useTypewriter({
@@ -88,6 +30,22 @@ export default function HomePage() {
   const switchLanguage = () => {
     setLanguage((prevLang) => (prevLang === 'en' ? 'pt' : 'en'));
     setKey((prevKey) => prevKey + 1);
+  };
+
+  const renderStars = (rating) => {
+    const totalStars = 5;
+    return (
+      <div className="flex">
+        {Array.from({ length: totalStars }, (v, i) => (
+          <span
+            key={i}
+            className={i < rating ? "text-yellow-500" : "text-gray-300"}
+          >
+            ★
+          </span>
+        ))}
+      </div>
+    );
   };
 
   return (
@@ -109,7 +67,19 @@ export default function HomePage() {
             <h3 className="text-xl font-semibold mb-2">{t.skills}</h3>
             <ul>
               {t.skillsList.map((skill, index) => (
-                <li key={index}>{skill}</li>
+                <li key={index} className="flex justify-between">
+                  <span>{skill.name}</span> {renderStars(skill.rating)}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-2">{t.languages}</h3>
+            <ul>
+              {t.languageList.map((language, index) => (
+                <li key={index} className="flex justify-between">
+                  <span>{language.name}</span> {renderStars(language.rating)}
+                </li>
               ))}
             </ul>
           </div>
