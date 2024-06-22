@@ -20,7 +20,7 @@ export default function HomePage() {
       welcome: 'Hello, World!',
       goToCurriculum: 'Explore My Curriculum',
       iAm: 'I am a',
-      aboutMe: 'Hi, I am Antonio Neto, a passionate learner and developer. I love working on exciting projects and continuously improving my skills. I like to work with Intelligent Systems and Databases.',
+      aboutMe: 'Hi, I am Antonio Neto, a passionate student and developer. I love working on exciting projects and continuously improving my skills. I like to work with Intelligent Systems and Databases.',
       education: 'Education',
       degree: 'Bachelor of Computer Science (2026/2)',
       skills: 'Skills',
@@ -28,7 +28,7 @@ export default function HomePage() {
         'Java', 'Python', 'Docker', 'Machine Learning'
       ],
       projects: 'Projects',
-      words: ['Learner', 'Developer', 'Scientist'],
+      words: ['Student', 'Developer', 'Scientist'],
       projectList: [
         {
           title: "Estoque Master",
@@ -94,7 +94,7 @@ export default function HomePage() {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>Antonio Neto's Website</title>
+        <title>Antonio Neto</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" />
       </Head>
       <div className="relative flex min-h-[100vh] bg-gray-100 animate-fade-in">
