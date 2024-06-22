@@ -8,6 +8,7 @@ import html2canvas from "html2canvas";
 import Image from "next/image";
 import { FaDownload } from "react-icons/fa";
 import { FlagIcon } from 'react-flag-kit';
+import translations from '../translations.json'; // Import translations
 
 const Curriculum = () => {
   const [language, setLanguage] = useState("en");
@@ -51,53 +52,6 @@ const Curriculum = () => {
 
   const switchLanguage = () => {
     setLanguage((prevLang) => (prevLang === "en" ? "pt" : "en"));
-  };
-
-  const translations = {
-    en: {
-      title: "Antonio Neto",
-      subtitle: "Student at PUC Minas",
-      education: "Education",
-      jobexperience: "Experience",
-      skills: "Skills",
-      projects: "Projects",
-      degree: "Bachelor of Computer Science (2026/2)",
-      experience: "Open-Source and College Projects",
-      projectList: [
-        {
-          title: "Estoque Master",
-          description: "A project to manage stock efficiently.",
-          link: "https://github.com/nietus/spark_crud",
-        },
-        {
-          title: "AnimeDB",
-          description: "Use of cryptography algorithms, pattern matching, data structures, and compression in an anime database.",
-          link: "https://github.com/AnimeAEDS3/aeds3",
-        },
-      ],
-    },
-    pt: {
-      title: "Antonio Neto",
-      subtitle: "Estudante na PUC Minas",
-      education: "Educação",
-      jobexperience: "Experiência",
-      skills: "Habilidades",
-      projects: "Projetos",
-      degree: "Bacharel em Ciência da Computação (2026/2)",
-      experience: "Open-Source e projetos de faculdade",
-      projectList: [
-        {
-          title: "Estoque Master",
-          description: "Um projeto para gerenciar estoque de forma eficiente.",
-          link: "https://github.com/nietus/spark_crud",
-        },
-        {
-          title: "AnimeDB",
-          description: "Uso de algoritmos de criptografia, casamento de padrões, estruturas de dados e compactação em um banco de dados de anime.",
-          link: "https://github.com/AnimeAEDS3/aeds3",
-        },
-      ],
-    },
   };
 
   const t = translations[language];
@@ -151,25 +105,18 @@ const Curriculum = () => {
             </h2>
             <p className="text-lg mb-4 dark:text-gray-300">{t.degree}</p>
             <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
-              {t.jobexperience}
+              {t.experience}
             </h2>
-            <p className="text-lg mb-4 dark:text-gray-300">{t.experience}</p>
+            <p className="text-lg mb-4 dark:text-gray-300">{t.experienceDetails}</p>
             <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
               {t.skills}
             </h2>
             <ul className="text-lg mb-4 dark:text-gray-300 space-y-2">
-              <li className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300">
-                <span>Java</span> {renderStars(4)}
-              </li>
-              <li className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300">
-                <span>Python</span> {renderStars(3)}
-              </li>
-              <li className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300">
-                <span>Docker</span> {renderStars(2)}
-              </li>
-              <li className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300">
-                <span>Machine Learning</span> {renderStars(2)}
-              </li>
+              {t.skillsList.map((skill, index) => (
+                <li key={index} className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300">
+                  <span>{skill}</span> {renderStars(4)}
+                </li>
+              ))}
             </ul>
           </div>
           <div className="mb-6">

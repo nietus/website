@@ -1,0 +1,50 @@
+{
+  "en": {
+    "title": "Antonio Neto",
+    "subtitle": "Student at PUC Minas",
+    "aboutMe": "Hi, I am Antonio Neto, a passionate learner and developer. I love working on exciting projects and continuously improving my skills. I like to work with Intelligent Systems and Databases.",
+    "education": "Education",
+    "degree": "Bachelor of Computer Science (2026/2)",
+    "skills": "Skills",
+    "skillsList": ["Java", "Python", "Docker", "Machine Learning"],
+    "projects": "Projects",
+    "projectList": [
+      {
+        "title": "Estoque Master",
+        "description": "A project to manage stock efficiently.",
+        "link": "https://github.com/nietus/spark_crud"
+      },
+      {
+        "title": "AnimeDB",
+        "description": "Use of cryptography algorithms, pattern matching, data structures, and compression in an anime database.",
+        "link": "https://github.com/AnimeAEDS3/aeds3"
+      }
+    ],
+    "experience": "Experience",
+    "experienceDetails": "Open-Source and College Projects"
+  },
+  "pt": {
+    "title": "Antonio Neto",
+    "subtitle": "Estudante na PUC Minas",
+    "aboutMe": "Oi, eu sou Antonio Neto, um estudante e desenvolvedor apaixonado. Adoro trabalhar em projetos empolgantes e melhorar continuamente minhas habilidades. Gosto de trabalhar com Sistemas Inteligentes e Bancos de Dados.",
+    "education": "Educação",
+    "degree": "Bacharel em Ciência da Computação (2026/2)",
+    "skills": "Habilidades",
+    "skillsList": ["Java", "Python", "Docker", "Machine Learning"],
+    "projects": "Projetos",
+    "projectList": [
+      {
+        "title": "Estoque Master",
+        "description": "Um projeto para gerenciar estoque de forma eficiente.",
+        "link": "https://github.com/nietus/spark_crud"
+      },
+      {
+        "title": "AnimeDB",
+        "description": "Uso de algoritmos de criptografia, casamento de padrões, estruturas de dados e compactação em um banco de dados de anime.",
+        "link": "https://github.com/AnimeAEDS3/aeds3"
+      }
+    ],
+    "experience": "Experiência",
+    "experienceDetails": "Open-Source e projetos de faculdade"
+  }
+}
