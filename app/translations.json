@@ -5,7 +5,7 @@
     "welcome": "Hello, World!",
     "goToCurriculum": "Explore My Curriculum",
     "iAm": "I am a",
-    "aboutMe": "Hi, I am Antonio Neto, a passionate learner and developer. I love working on exciting projects and continuously improving my skills. I like to work with Intelligent Systems and Databases.",
+    "aboutMe": "Hi, I am Antonio Neto, a Brazilian Computer Science student with a keen interest in machine learning, generative AI, automation, and motorsport.",
     "education": "Education",
     "degree": "Bachelor of Computer Science (2026/2)",
     "skills": "Skills",
@@ -13,7 +13,8 @@
       { "name": "Java", "rating": 4 },
       { "name": "Python", "rating": 4 },
       { "name": "Docker", "rating": 3 },
-      { "name": "Machine Learning", "rating": 3 }
+      { "name": "Data Science", "rating": 3 },
+      { "name": "PostgreSQL", "rating": 3 }
     ],
     "projects": "Projects",
     "words": ["Student", "Developer", "Scientist"],
@@ -27,6 +28,16 @@
         "title": "AnimeDB",
         "description": "Use of cryptography algorithms, pattern matching, data structures, and compression in an anime database.",
         "link": "https://github.com/AnimeAEDS3/aeds3"
+      },
+      {
+        "title": "PhiData",
+        "description": "Contributions to Portuguese AI assistants.",
+        "link": "https://github.com/phidatahq/phidata"
+      },
+      {
+        "title": "NovelWriter",
+        "description": "LLM model for writing novels.",
+        "link": ""
       }
     ],
     "experience": "Experience",
@@ -44,7 +55,7 @@
     "welcome": "Olá, Mundo!",
     "goToCurriculum": "Explore Meu Currículo",
     "iAm": "Eu sou um",
-    "aboutMe": "Oi, eu sou Antonio Neto, um estudante e desenvolvedor apaixonado. Adoro trabalhar em projetos empolgantes e melhorar continuamente minhas habilidades. Gosto de trabalhar com Sistemas Inteligentes e Bancos de Dados.",
+    "aboutMe": "Oi, eu sou Antonio Neto, um estudante brasileiro de Ciência da Computação com bastante interesse em machine learning, IAs generativas, automação e motomobilismo.",
     "education": "Educação",
     "degree": "Bacharel em Ciência da Computação (2026/2)",
     "skills": "Habilidades",
@@ -52,7 +63,8 @@
       { "name": "Java", "rating": 4 },
       { "name": "Python", "rating": 4 },
       { "name": "Docker", "rating": 3 },
-      { "name": "Machine Learning", "rating": 3 }
+      { "name": "Data Science", "rating": 3 },
+      { "name": "PostgreSQL", "rating": 3 }
     ],
     "projects": "Projetos",
     "words": ["Estudante", "Desenvolvedor", "Cientista"],
@@ -66,6 +78,16 @@
         "title": "AnimeDB",
         "description": "Uso de algoritmos de criptografia, casamento de padrões, estruturas de dados e compactação em um banco de dados de anime.",
         "link": "https://github.com/AnimeAEDS3/aeds3"
+      },
+      {
+        "title": "PhiData",
+        "description": "Contribuições para assistentes de IA em português.",
+        "link": "https://github.com/phidatahq/phidata"
+      },
+      {
+        "title": "NovelWriter",
+        "description": "Modelo LLM para escrever romances.",
+        "link": ""
       }
     ],
     "experience": "Experiência",

@@ -17,15 +17,15 @@ const Curriculum = () => {
   const generatePDF = () => {
     const input = document.getElementById("curriculum");
     setIsLoading(true);
-
+  
     // Temporarily expand the element height to capture all content
     const originalHeight = input.style.height;
     input.style.height = "auto";
     input.style.maxHeight = "none";
-
+  
     // Scroll to top before capturing
     window.scrollTo(0, 0);
-
+  
     html2canvas(input, { scale: 2, scrollY: -window.scrollY }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF({
@@ -36,14 +36,26 @@ const Curriculum = () => {
       const imgProps = pdf.getImageProperties(imgData);
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
+  
+      // Adding the main content
       pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+  
+      // Adding the footer with a link
+      pdf.setFontSize(10);
+      pdf.setTextColor(0, 0, 255);
+      pdf.textWithLink(
+        "Visit my website: https://antoniocouto.vercel.app",
+        20,
+        pdf.internal.pageSize.getHeight() - 30,
+        { url: "https://antoniocouto.vercel.app" }
+      );
+  
       pdf.save("Curriculum_Antonio_Neto.pdf");
       
       // Restore the original height
       input.style.height = originalHeight;
       input.style.maxHeight = "";
-
+  
       setIsLoading(false);
     });
   };
