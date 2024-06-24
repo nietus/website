@@ -36,8 +36,8 @@
       },
       {
         "title": "NovelWriter",
-        "description": "LLM model for writing novels.",
-        "link": ""
+        "description": "LLM model for writing Light Novels.",
+        "link": "https://github.com/nietus/NovelWriter"
       }
     ],
     "experience": "Experience",
@@ -86,8 +86,8 @@
       },
       {
         "title": "NovelWriter",
-        "description": "Modelo LLM para escrever romances.",
-        "link": ""
+        "description": "Modelo LLM para escrever Light Novels.",
+        "link": "https://github.com/nietus/NovelWriter"
       }
     ],
     "experience": "Experiência",

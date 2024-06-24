@@ -37,10 +37,7 @@ const Curriculum = () => {
       const pdfWidth = pdf.internal.pageSize.getWidth();
       const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
   
-      // Adding the main content
       pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-  
-      // Adding the footer with a link
       pdf.setFontSize(10);
       pdf.setTextColor(0, 0, 255);
       pdf.textWithLink(
