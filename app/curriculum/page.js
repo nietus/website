@@ -8,10 +8,10 @@ import html2canvas from "html2canvas";
 import Image from "next/image";
 import { FaDownload } from "react-icons/fa";
 import { FlagIcon } from 'react-flag-kit';
-import translations from '../translations.json'; // Import translations
+import translations from '../translations.json'; 
 
 const Curriculum = () => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("pt");
   const [isLoading, setIsLoading] = useState(false);
 
   const generatePDF = () => {
@@ -74,7 +74,7 @@ const Curriculum = () => {
   };
 
   const switchLanguage = () => {
-    setLanguage((prevLang) => (prevLang === "en" ? "pt" : "en"));
+    setLanguage((prevLang) => (prevLang === "pt" ? "en" : "pt"));
   };
 
   const t = translations[language];
