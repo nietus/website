@@ -41,7 +41,7 @@ const Curriculum = () => {
       pdf.setFontSize(10);
       pdf.setTextColor(0, 0, 255);
       pdf.textWithLink(
-        "Visit my website: https://antoniocouto.vercel.app",
+        "https://antoniocouto.vercel.app",
         20,
         pdf.internal.pageSize.getHeight() - 30,
         { url: "https://antoniocouto.vercel.app" }
@@ -64,7 +64,7 @@ const Curriculum = () => {
         {Array.from({ length: totalStars }, (v, i) => (
           <span
             key={i}
-            className={i < rating ? "text-yellow-500" : "text-gray-300"}
+            className={`star ${i < rating ? "text-yellow-500" : "text-gray-300"} transition-transform transform hover:scale-125`}
           >
             ★
           </span>
@@ -156,17 +156,23 @@ const Curriculum = () => {
             <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
               {t.projects}
             </h2>
-            <ul className="text-lg mb-4 dark:text-gray-300 list-disc list-inside space-y-2">
+            <ul className="text-lg mb-4 dark:text-gray-300 list-disc list-inside space-y-2" style={{ listStyleType: 'none' }}>
               {t.projectList.map((project, index) => (
-                <li key={index}>
+                <li key={index} className="transition-transform transform hover:scale-105 duration-300">
                   <a
                     target="_blank"
                     href={project.link}
-                    className="text-green-500 dark:text-green-300 transition-colors duration-300 hover:text-green-700 dark:hover:text-green-500"
+                    className="block text-black transition-colors duration-300 hover:text-green-700 dark:hover:text-green-500"
                   >
-                    {project.title}
+                    <div>
+                      <span className="text-green-500 dark:text-green-300">
+                        {project.title}
+                      </span>
+                      <p className="text-sm dark:text-gray-400">
+                        {project.description}
+                      </p>
+                    </div>
                   </a>
-                  <p className="text-sm dark:text-gray-400">{project.description}</p>
                 </li>
               ))}
             </ul>
