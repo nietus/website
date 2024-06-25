@@ -142,7 +142,7 @@ export default function HomePage() {
             }
             @media (max-width: 1280px), (max-height: 720px) {
               .sidebar, .toggle-icon {
-                display: none;
+                display: none !important;
               }
             }
           `}
@@ -150,7 +150,7 @@ export default function HomePage() {
       </Head>
       <div className="relative flex min-h-[100vh] bg-gray-50 animate-fade-in">
         {!isSidebarVisible && (
-          <div className="absolute top-4 left-4 z-30 toggle-icon">
+          <div className="absolute top-4 left-4 z-30 toggle-icon hidden md:block">
             <FontAwesomeIcon
               icon={faArrowRight}
               size="2x"
