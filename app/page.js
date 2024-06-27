@@ -10,13 +10,14 @@ import translations from "./translations.json";
 
 const MainPage = () => {
   const [language, setLanguage] = useState("pt");
-  const [isLoading, setIsLoading] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [initialLoad, setInitialLoad] = useState(true);
 
   const sectionsRef = useRef([]);
 
   useEffect(() => {
     setLoaded(true);
+    setInitialLoad(false); // Mark initial load as complete after first render
   }, []);
 
   useEffect(() => {
@@ -44,49 +45,38 @@ const MainPage = () => {
     };
   }, [sectionsRef]);
 
-  const generatePDF = () => {
+  const generatePDF = async () => {
     const input = document.getElementById("curriculum");
-    setIsLoading(true);
 
-    // Temporarily expand the element height to capture all content
-    const originalHeight = input.style.height;
-    input.style.height = "auto";
-    input.style.maxHeight = "none";
+    // Remove fade-in classes
+    sectionsRef.current.forEach((section) => {
+      section.classList.remove("fade-in");
+    });
 
-    // Scroll to top before capturing
-    window.scrollTo(0, 0);
+    try {
+      const canvas = await html2canvas(input, {
+        scale: 2,
+        scrollY: -window.scrollY,
+        backgroundColor: "#ffffff", // Ensure a solid background color
+        useCORS: true, // Enable cross-origin resource sharing
+      });
+      const imgData = canvas.toDataURL("image/png");
+      const pdf = new jsPDF({
+        orientation: "portrait",
+        unit: "pt",
+        format: "a4",
+      });
 
-    html2canvas(input, { scale: 2, scrollY: -window.scrollY }).then(
-      (canvas) => {
-        const imgData = canvas.toDataURL("image/png");
-        const pdf = new jsPDF({
-          orientation: "portrait",
-          unit: "pt",
-          format: "a4",
-        });
-        const imgProps = pdf.getImageProperties(imgData);
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+      const imgProps = pdf.getImageProperties(imgData);
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
 
-        pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-        pdf.setFontSize(10);
-        pdf.setTextColor(0, 0, 255);
-        pdf.textWithLink(
-          "https://antoniocouto.vercel.app",
-          20,
-          pdf.internal.pageSize.getHeight() - 30,
-          { url: "https://antoniocouto.vercel.app" }
-        );
-
-        pdf.save("Curriculum_Antonio_Neto.pdf");
-
-        // Restore the original height
-        input.style.height = originalHeight;
-        input.style.maxHeight = "";
-
-        setIsLoading(false);
-      }
-    );
+      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      pdf.save("Curriculum_Antonio_Neto.pdf");
+    } catch (error) {
+      console.error("Error generating PDF:", error);
+      // Handle error here, e.g., show an error message
+    } 
   };
 
   const renderStars = (rating) => {
@@ -116,7 +106,7 @@ const MainPage = () => {
   return (
     <div
       className={`min-h-screen flex flex-col justify-between font-sans ${
-        loaded ? "opacity-100" : "opacity-0"
+        initialLoad ? "opacity-0" : "opacity-100"
       } transition-opacity duration-1000`}
       style={{
         backgroundImage: `
@@ -130,11 +120,6 @@ const MainPage = () => {
         backgroundAttachment: `fixed`,
       }}
     >
-      {isLoading && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="text-white text-2xl">Generating PDF...</div>
-        </div>
-      )}
       <div className="flex-grow flex flex-col justify-center items-center mt-[10vh]">
         <div className="absolute top-4 right-4 flex items-center space-x-4 no-print">
           <div className="flex items-center space-x-2">
@@ -157,7 +142,7 @@ const MainPage = () => {
           </div>
           <button
             onClick={generatePDF}
-            className="bg-green-600 dark:bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-700 dark:hover:bg-green-600 transition-transform transform hover:scale-105 duration-300 flex items-center hidden md:flex"
+            className="bg-green-600 dark:bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-700 dark:hover:bg-green-600 transition-transform transform hover:scale-105 duration-300 items-center hidden md:flex"
           >
             <FaDownload className="mr-2" />
             PDF
@@ -166,8 +151,9 @@ const MainPage = () => {
         <div
           id="curriculum"
           className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl max-w-2xl w-11/12 md:w-4/6"
+          style={{ color: "black" }} // Ensure text color is solid black
         >
-          <div className="flex items-center mb-6 animate-fade-in-down">
+          <div className="flex items-center mb-6">
             <div className="w-20 h-20 relative rounded-full overflow-hidden shadow-lg">
               <Image
                 src="/profile_picture.jpeg"
@@ -187,7 +173,7 @@ const MainPage = () => {
           </div>
           <div id="curriculum-content">
             <div
-              className="mb-6 animate-fade-in-down"
+              className="mb-6"
               ref={(el) => (sectionsRef.current[0] = el)}
             >
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
@@ -196,7 +182,7 @@ const MainPage = () => {
               <p className="text-lg mb-4 dark:text-gray-300">{t.aboutMe}</p>
             </div>
             <div
-              className="mb-6 animate-fade-in-down"
+              className="mb-6"
               ref={(el) => (sectionsRef.current[1] = el)}
             >
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
@@ -206,7 +192,7 @@ const MainPage = () => {
               <p className="text-lg mb-4 dark:text-gray-300">{t.confucius}</p>
             </div>
             <div
-              className="mb-6 animate-fade-in-down"
+              className="mb-6"
               ref={(el) => (sectionsRef.current[2] = el)}
             >
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
@@ -217,7 +203,7 @@ const MainPage = () => {
               </p>
             </div>
             <div
-              className="mb-6 animate-fade-in-down"
+              className="mb-6"
               ref={(el) => (sectionsRef.current[3] = el)}
             >
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
@@ -232,7 +218,7 @@ const MainPage = () => {
               </ul>
             </div>
             <div
-              className="mb-6 animate-fade-in-down"
+              className="mb-6"
               ref={(el) => (sectionsRef.current[4] = el)}
             >
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
@@ -247,7 +233,7 @@ const MainPage = () => {
               </ul>
             </div>
             <div
-              className="mb-6 animate-fade-in-down"
+              className="mb-6"
               ref={(el) => (sectionsRef.current[5] = el)}
             >
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
@@ -260,7 +246,7 @@ const MainPage = () => {
                 {t.projectList.map((project, index) => (
                   <li
                     key={index}
-                    className="transition-transform transform hover:scale-105 duration-300"
+                    className="hover-scale transition-transform transform duration-300"
                   >
                     <a
                       target="_blank"
@@ -293,7 +279,7 @@ const MainPage = () => {
               href="https://www.linkedin.com/in/antonioniet/"
               target="_blank"
               rel="noopener noreferrer"
-              className="footer-icon"
+              className="footer-icon no-hover"
             >
               <FaLinkedin />
             </a>
@@ -301,13 +287,13 @@ const MainPage = () => {
               href="https://github.com/nietus"
               target="_blank"
               rel="noopener noreferrer"
-              className="footer-icon"
+              className="footer-icon no-hover"
             >
               <FaGithub />
             </a>
             <a
               href="mailto:antonio.couto@sga.pucminas.br"
-              className="footer-icon"
+              className="footer-icon no-hover"
             >
               <FaEnvelope />
             </a>

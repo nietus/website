@@ -55,11 +55,23 @@ body {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.footer-icon:hover {
-  color: #97eebf;
-  transform: scale(1.2) rotate(10deg);
+@media (hover: hover) and (pointer: fine) {
+  .footer-icon:hover {
+    color: #97eebf;
+    transform: scale(1.2) rotate(10deg);
+  }
+
+  .footer-icon:active {
+    transform: scale(1) rotate(0deg);
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
 }
 
-.footer-icon:active {
-  transform: scale(1) rotate(0deg);
+@media (hover: none) {
+  .no-hover {
+    pointer-events: none;
+  }
 }
