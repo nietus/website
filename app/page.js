@@ -115,9 +115,20 @@ const MainPage = () => {
 
   return (
     <div
-      className={`min-h-screen flex flex-col justify-between bg-gradient-to-r from-gray-100 to-green-100 dark:bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 font-sans ${
+      className={`min-h-screen flex flex-col justify-between font-sans ${
         loaded ? "opacity-100" : "opacity-0"
       } transition-opacity duration-1000`}
+      style={{
+        backgroundImage: `
+      radial-gradient(circle at 50% 50%, rgba(66, 153, 225, 0.4) 0%, rgba(66, 153, 225, 0.1) 100%),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+      linear-gradient(90deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.2)),
+      linear-gradient(45deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.2))`,
+        backgroundSize: `150px 150px, 100% 60px, 100% 1px, 100% 1px`,
+        backgroundPosition: `0 0, 0 0, 0 50%, 0 30%`,
+        backgroundRepeat: `repeat, repeat, repeat, repeat`,
+        backgroundAttachment: `fixed`,
+      }}
     >
       {isLoading && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -214,10 +225,7 @@ const MainPage = () => {
               </h2>
               <ul className="text-lg mb-4 dark:text-gray-300 space-y-2">
                 {t.skillsList.map((skill, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300"
-                  >
+                  <li key={index} className="flex items-center justify-between">
                     <span>{skill.name}</span> {renderStars(skill.rating)}
                   </li>
                 ))}
@@ -232,12 +240,8 @@ const MainPage = () => {
               </h2>
               <ul className="text-lg mb-4 dark:text-gray-300 space-y-2">
                 {t.languageList.map((language, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center justify-between transition-transform transform hover:scale-105 duration-300"
-                  >
-                    <span>{language.name}</span>{" "}
-                    {renderStars(language.rating)}
+                  <li key={index} className="flex items-center justify-between">
+                    <span>{language.name}</span> {renderStars(language.rating)}
                   </li>
                 ))}
               </ul>

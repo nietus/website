@@ -4,6 +4,8 @@
 
 body {
   @apply font-sans bg-light text-dark;
+  -webkit-user-select: none; /* Prevent text selection */
+  user-select: none; /* Prevent text selection */
 }
 
 @keyframes fade-in-down {
@@ -29,8 +31,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  -webkit-user-select: none; /* Prevent text selection */
-  user-select: none; /* Prevent text selection */
 }
 
 .footer-content {
@@ -56,7 +56,7 @@ body {
 }
 
 .footer-icon:hover {
-  color: #38a169;
+  color: #97eebf;
   transform: scale(1.2) rotate(10deg);
 }
 
