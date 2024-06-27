@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
 import Image from "next/image";
 import { FaDownload, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { FlagIcon } from "react-flag-kit";
@@ -44,40 +42,6 @@ const MainPage = () => {
       }
     };
   }, [sectionsRef]);
-
-  const generatePDF = async () => {
-    const input = document.getElementById("curriculum");
-
-    // Remove fade-in classes
-    sectionsRef.current.forEach((section) => {
-      section.classList.remove("fade-in");
-    });
-
-    try {
-      const canvas = await html2canvas(input, {
-        scale: 2,
-        scrollY: -window.scrollY,
-        backgroundColor: "#ffffff", // Ensure a solid background color
-        useCORS: true, // Enable cross-origin resource sharing
-      });
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF({
-        orientation: "portrait",
-        unit: "pt",
-        format: "a4",
-      });
-
-      const imgProps = pdf.getImageProperties(imgData);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-      pdf.save("Curriculum_Antonio_Neto.pdf");
-    } catch (error) {
-      console.error("Error generating PDF:", error);
-      // Handle error here, e.g., show an error message
-    } 
-  };
 
   const renderStars = (rating) => {
     const totalStars = 5;
@@ -140,13 +104,14 @@ const MainPage = () => {
               onClick={() => setLanguage("pt")}
             />
           </div>
-          <button
-            onClick={generatePDF}
+          <a
+            href="/Antonio_Neto_Curriculum.pdf"
             className="bg-green-600 dark:bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-700 dark:hover:bg-green-600 transition-transform transform hover:scale-105 duration-300 items-center hidden md:flex"
+            download
           >
             <FaDownload className="mr-2" />
-            PDF
-          </button>
+            CV
+          </a>
         </div>
         <div
           id="curriculum"
@@ -172,29 +137,20 @@ const MainPage = () => {
             </div>
           </div>
           <div id="curriculum-content">
-            <div
-              className="mb-6"
-              ref={(el) => (sectionsRef.current[0] = el)}
-            >
+            <div className="mb-6" ref={(el) => (sectionsRef.current[0] = el)}>
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
                 {t.aboutMeTitle}
               </h2>
               <p className="text-lg mb-4 dark:text-gray-300">{t.aboutMe}</p>
             </div>
-            <div
-              className="mb-6"
-              ref={(el) => (sectionsRef.current[1] = el)}
-            >
+            <div className="mb-6" ref={(el) => (sectionsRef.current[1] = el)}>
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
                 {t.education}
               </h2>
               <p className="text-lg mb-4 dark:text-gray-300">{t.degree}</p>
               <p className="text-lg mb-4 dark:text-gray-300">{t.confucius}</p>
             </div>
-            <div
-              className="mb-6"
-              ref={(el) => (sectionsRef.current[2] = el)}
-            >
+            <div className="mb-6" ref={(el) => (sectionsRef.current[2] = el)}>
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
                 {t.experience}
               </h2>
@@ -202,10 +158,7 @@ const MainPage = () => {
                 {t.experienceDetails}
               </p>
             </div>
-            <div
-              className="mb-6"
-              ref={(el) => (sectionsRef.current[3] = el)}
-            >
+            <div className="mb-6" ref={(el) => (sectionsRef.current[3] = el)}>
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
                 {t.skills}
               </h2>
@@ -217,10 +170,7 @@ const MainPage = () => {
                 ))}
               </ul>
             </div>
-            <div
-              className="mb-6"
-              ref={(el) => (sectionsRef.current[4] = el)}
-            >
+            <div className="mb-6" ref={(el) => (sectionsRef.current[4] = el)}>
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
                 {t.languages}
               </h2>
@@ -232,10 +182,7 @@ const MainPage = () => {
                 ))}
               </ul>
             </div>
-            <div
-              className="mb-6"
-              ref={(el) => (sectionsRef.current[5] = el)}
-            >
+            <div className="mb-6" ref={(el) => (sectionsRef.current[5] = el)}>
               <h2 className="text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 border-green-500 pb-2">
                 {t.projects}
               </h2>
