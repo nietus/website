@@ -106,7 +106,7 @@ const MainPage = () => {
           </div>
           <a
             href="/Antonio_Neto_Curriculum.pdf"
-            className="bg-green-600 dark:bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-700 dark:hover:bg-green-600 transition-transform transform hover:scale-105 duration-300 items-center hidden md:flex"
+            className="bg-green-600 dark:bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-700 dark:hover:bg-green-600 transition-transform transform hover:scale-105 duration-300 items-center flex"
             download
           >
             <FaDownload className="mr-2" />
