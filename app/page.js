@@ -10,12 +10,14 @@ const MainPage = () => {
   const [language, setLanguage] = useState("pt");
   const [loaded, setLoaded] = useState(false);
   const [initialLoad, setInitialLoad] = useState(true);
+  const [backgroundStyle, setBackgroundStyle] = useState({});
 
   const sectionsRef = useRef([]);
 
   useEffect(() => {
     setLoaded(true);
     setInitialLoad(false); // Mark initial load as complete after first render
+    changeBackground("pt"); // Set initial background for pt
   }, []);
 
   useEffect(() => {
@@ -62,7 +64,39 @@ const MainPage = () => {
   };
 
   const switchLanguage = () => {
-    setLanguage((prevLang) => (prevLang === "pt" ? "en" : "pt"));
+    setLanguage((prevLang) => {
+      const newLang = prevLang === "pt" ? "en" : "pt";
+      changeBackground(newLang);
+      return newLang;
+    });
+  };
+
+  const changeBackground = (lang) => {
+    if (lang === "en") {
+      setBackgroundStyle({
+        backgroundImage: `
+          radial-gradient(circle at 50% 50%, rgba(66, 135, 245, 0.4) 0%, rgba(66, 135, 245, 0.1) 100%),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+          linear-gradient(90deg, rgba(245, 66, 66, 0.2), rgba(245, 66, 66, 0.2)),
+          linear-gradient(45deg, rgba(245, 66, 66, 0.2), rgba(245, 66, 66, 0.2))`,
+        backgroundSize: `150px 150px, 100% 60px, 100% 1px, 100% 1px`,
+        backgroundPosition: `0 0, 0 0, 0 50%, 0 30%`,
+        backgroundRepeat: `repeat, repeat, repeat, repeat`,
+        backgroundAttachment: `fixed`,
+      });
+    } else {
+      setBackgroundStyle({
+        backgroundImage: `
+          radial-gradient(circle at 50% 50%, rgba(66, 153, 225, 0.4) 0%, rgba(66, 153, 225, 0.1) 100%),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+          linear-gradient(90deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.2)),
+          linear-gradient(45deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.2))`,
+        backgroundSize: `150px 150px, 100% 60px, 100% 1px, 100% 1px`,
+        backgroundPosition: `0 0, 0 0, 0 50%, 0 30%`,
+        backgroundRepeat: `repeat, repeat, repeat, repeat`,
+        backgroundAttachment: `fixed`,
+      });
+    }
   };
 
   const t = translations[language];
@@ -72,17 +106,7 @@ const MainPage = () => {
       className={`min-h-screen flex flex-col justify-between font-sans ${
         initialLoad ? "opacity-0" : "opacity-100"
       } transition-opacity duration-1000`}
-      style={{
-        backgroundImage: `
-      radial-gradient(circle at 50% 50%, rgba(66, 153, 225, 0.4) 0%, rgba(66, 153, 225, 0.1) 100%),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-      linear-gradient(90deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.2)),
-      linear-gradient(45deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.2))`,
-        backgroundSize: `150px 150px, 100% 60px, 100% 1px, 100% 1px`,
-        backgroundPosition: `0 0, 0 0, 0 50%, 0 30%`,
-        backgroundRepeat: `repeat, repeat, repeat, repeat`,
-        backgroundAttachment: `fixed`,
-      }}
+      style={backgroundStyle}
     >
       <div className="flex-grow flex flex-col justify-center items-center mt-[10vh]">
         <div className="absolute top-4 right-4 flex items-center space-x-4 no-print">
@@ -93,7 +117,7 @@ const MainPage = () => {
               className={`cursor-pointer ${
                 language === "en" ? "opacity-100" : "opacity-50"
               } hover:opacity-100 transition-opacity duration-300`}
-              onClick={() => setLanguage("en")}
+              onClick={() => switchLanguage("en")}
             />
             <FlagIcon
               code="BR"
@@ -101,7 +125,7 @@ const MainPage = () => {
               className={`cursor-pointer ${
                 language === "pt" ? "opacity-100" : "opacity-50"
               } hover:opacity-100 transition-opacity duration-300`}
-              onClick={() => setLanguage("pt")}
+              onClick={() => switchLanguage("pt")}
             />
           </div>
           <a
