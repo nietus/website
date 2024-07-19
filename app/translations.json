@@ -5,18 +5,18 @@
     "aboutMeTitle": "About Me",
     "aboutMe": "Hi, I am Antonio Neto, a Brazilian Computer Science student with a keen interest in Machine Learning, Generative AI, Automation, and Motorsport.",
     "education": "Education",
-    "degree": "Bachelor of Computer Science (2026/2)",
+    "degree": "Computer Science Student (since 2023/1)",
     "confucius": "UFMG's Confucius Institute (Mandarin Student)",
     "skills": "Top-Skills",
     "skillsList": [
-      { "name": "Java", "rating": 4 },
-      { "name": "Python", "rating": 4 },
+      { "name": "Java, Python", "rating": 4 },
+      { "name": "PyTorch, Scikit-learn", "rating": 3 },
+      { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 3 },
+      { "name": "PostgreSQL, MySQL", "rating": 3 },
       { "name": "Docker", "rating": 3 },
-      { "name": "Data Science", "rating": 3 },
-      { "name": "PostgreSQL", "rating": 3 }
+      { "name": "Git, GitHub", "rating": 3 }
     ],
     "projects": "Projects",
-    "words": ["Student", "Developer", "Scientist"],
     "projectList": [
       {
         "title": "Estoque Master",
@@ -29,14 +29,9 @@
         "link": "https://github.com/AnimeAEDS3/aeds3"
       },
       {
-        "title": "PhiData",
-        "description": "Contributions to Portuguese AI assistants.",
-        "link": "https://github.com/phidatahq/phidata"
-      },
-      {
-        "title": "NovelWriter",
-        "description": "LLM model for writing Light Novels.",
-        "link": "https://github.com/nietus/NovelWriter"
+        "title": "Agro 4.0",
+        "description": "Creation of AI models related to agriculture.",
+        "link": "https://github.com/nietus/agro4.0"
       }
     ],
     "experience": "Experience",
@@ -54,18 +49,18 @@
     "aboutMeTitle": "Sobre Mim",
     "aboutMe": "Oi, eu sou Antonio Neto, um estudante brasileiro de Ciência da Computação com bastante interesse em Machine Learning, IAs generativas, Automação e Motomobilismo.",
     "education": "Educação",
-    "degree": "Bacharel em Ciência da Computação (2026/2)",
-    "confucius": "Instituto Confúcio UFMG (Estudante de Mandarim)",
+    "degree": "Estudante de Ciência da Computação (desde 2023/1)",
+    "confucius": "Estudante de Mandarim no Instituto Confúcio (UFMG)",
     "skills": "Top-Habilidades",
     "skillsList": [
-      { "name": "Java", "rating": 4 },
-      { "name": "Python", "rating": 4 },
+      { "name": "Java, Python", "rating": 4 },
+      { "name": "PyTorch, Scikit-learn", "rating": 3 },
+      { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 3 },
+      { "name": "PostgreSQL, MySQL", "rating": 3 },
       { "name": "Docker", "rating": 3 },
-      { "name": "Data Science", "rating": 3 },
-      { "name": "PostgreSQL", "rating": 3 }
+      { "name": "Git, GitHub", "rating": 3 }
     ],
     "projects": "Projetos",
-    "words": ["Estudante", "Desenvolvedor", "Cientista"],
     "projectList": [
       {
         "title": "Estoque Master",
@@ -78,14 +73,9 @@
         "link": "https://github.com/AnimeAEDS3/aeds3"
       },
       {
-        "title": "PhiData",
-        "description": "Contribuições para assistentes de IA em português.",
-        "link": "https://github.com/phidatahq/phidata"
-      },
-      {
-        "title": "NovelWriter",
-        "description": "Modelo LLM para escrever Light Novels.",
-        "link": "https://github.com/nietus/NovelWriter"
+        "title": "Agro 4.0",
+        "description": "Criação de modelos de IA para a agricultura.",
+        "link": "https://github.com/nietus/agro4.0"
       }
     ],
     "experience": "Experiência",
