@@ -5,8 +5,8 @@
     "aboutMeTitle": "About Me",
     "aboutMe": "Hi, I am Antonio Neto, a Brazilian Computer Science student with a keen interest in Machine Learning, Generative AI and Data Science",
     "education": "Education",
-    "degree": "Computer Science Student (since 2023/1)",
-    "confucius": "UFMG's Confucius Institute (Mandarin Student)",
+    "degree": "Computer Science Student (ongoing)",
+    "confucius": "UFMG's Confucius Institute Mandarin Student (ongoing)",
     "skills": "Top-Skills",
     "skillsList": [
       { "name": "Java, Python", "rating": 4 },
@@ -14,7 +14,7 @@
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 3 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
       { "name": "Docker", "rating": 3 },
-      { "name": "Git, GitHub", "rating": 3 }
+      { "name": "Git, GitHub", "rating": 5 }
     ],
     "projects": "Projects",
     "projectList": [
@@ -49,8 +49,8 @@
     "aboutMeTitle": "Sobre Mim",
     "aboutMe": "Oi, eu sou Antonio Neto, um estudante brasileiro de Ciência da Computação com bastante interesse em Machine Learning, IAs generativas e Ciência de Dados.",
     "education": "Educação",
-    "degree": "Estudante de Ciência da Computação (desde 2023/1)",
-    "confucius": "Estudante de Mandarim no Instituto Confúcio (UFMG)",
+    "degree": "Estudante de Ciência da Computação (em andamento)",
+    "confucius": "Estudante de Mandarim no Instituto Confúcio da UFMG (em andamento)",
     "skills": "Top-Habilidades",
     "skillsList": [
       { "name": "Java, Python", "rating": 4 },
@@ -58,7 +58,7 @@
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 3 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
       { "name": "Docker", "rating": 3 },
-      { "name": "Git, GitHub", "rating": 3 }
+      { "name": "Git, GitHub", "rating": 5 }
     ],
     "projects": "Projetos",
     "projectList": [
