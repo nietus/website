@@ -4,6 +4,8 @@
 
 body {
   @apply font-sans bg-light text-dark;
+  -webkit-user-select: none; /* Prevent text selection */
+  user-select: none; /* Prevent text selection */
 }
 
 @keyframes fade-in-down {

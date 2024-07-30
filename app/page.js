@@ -249,12 +249,13 @@ const MainPage = () => {
                 {t.projectList.map((project, index) => (
                   <li
                     key={index}
-                    className="hover-scale transition-transform transform duration-300"
+                    className="transition-transform transform duration-300"
+                    style={{ display: "inline-block" }} // Ensure inline-block to scale
                   >
                     <a
                       target="_blank"
                       href={project.link}
-                      className={`block text-black transition-colors duration-300 ${
+                      className={`block text-black transition-transform duration-300 ${
                         language === "en"
                           ? "hover:text-blue-400"
                           : "hover:text-green-500"
@@ -262,7 +263,7 @@ const MainPage = () => {
                         language === "en"
                           ? "dark:hover:text-blue-400"
                           : "dark:hover:text-green-500"
-                      }`}
+                      } hover:scale-105`}
                     >
                       <div>
                         <span
