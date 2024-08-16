@@ -16,8 +16,8 @@ const MainPage = () => {
 
   useEffect(() => {
     setLoaded(true);
-    setInitialLoad(false); // Mark initial load as complete after first render
-    changeBackground("pt"); // Set initial background for pt
+    setInitialLoad(false); // Marcar o carregamento inicial como concluído após o primeiro render
+    changeBackground("pt"); // Definir o background inicial para "pt"
   }, []);
 
   useEffect(() => {
@@ -140,7 +140,7 @@ const MainPage = () => {
                 : "bg-green-600 dark:bg-green-400 text-white hover:bg-green-700 dark:hover:bg-green-600"
             }`}
             download
-            >
+          >
             <FaDownload className="mr-2" />
             CV
           </a>
@@ -148,7 +148,7 @@ const MainPage = () => {
         <div
           id="curriculum"
           className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl max-w-2xl w-11/12 md:w-4/6"
-          style={{ color: "black" }} // Ensure text color is solid black
+          style={{ color: "black" }} // Garantir que a cor do texto seja preto sólido
         >
           <div className="flex items-center mb-6">
             <div className="w-20 h-20 relative rounded-full overflow-hidden shadow-lg">
@@ -250,7 +250,7 @@ const MainPage = () => {
                   <li
                     key={index}
                     className="transition-transform transform duration-300"
-                    style={{ display: "inline-block" }} // Ensure inline-block to scale
+                    style={{ display: "inline-block" }} // Garantir inline-block para a escala
                   >
                     <a
                       target="_blank"
@@ -296,6 +296,7 @@ const MainPage = () => {
           <div className="footer-text">
             &copy; {new Date().getFullYear()} Antonio Neto
           </div>
+          <div className="footer-divider"></div> {/* Divider para a borda */}
           <div className="footer-icons">
             <a
               href="https://wa.me/5531981070021"

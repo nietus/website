@@ -39,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem; /* Diminuir o espaçamento entre os elementos */
 }
 
 .footer-text {
@@ -48,7 +48,7 @@ body {
 
 .footer-icons {
   display: flex;
-  gap: 2rem;
+  gap: 1rem; /* Diminuir o espaçamento entre os ícones */
 }
 
 .footer-icon {
