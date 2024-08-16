@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { FaDownload, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaDownload, FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { FlagIcon } from "react-flag-kit";
 import translations from "./translations.json";
 
@@ -137,7 +137,7 @@ const MainPage = () => {
             className={`py-2 px-4 rounded-full transition-transform transform hover:scale-105 duration-300 items-center flex ${
               language === "en"
                 ? "bg-blue-500 dark:bg-blue-500 text-white hover:bg-blue-600 dark:hover:bg-blue-600"
-                : "bg-green-600 dark:bg-green-500 text-white hover:bg-green-700 dark:hover:bg-green-600"
+                : "bg-green-600 dark:bg-green-400 text-white hover:bg-green-700 dark:hover:bg-green-600"
             }`}
             download
             >
@@ -172,7 +172,7 @@ const MainPage = () => {
             <div className="mb-6" ref={(el) => (sectionsRef.current[0] = el)}>
               <h2
                 className={`text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 ${
-                  language === "en" ? "border-blue-400" : "border-green-500"
+                  language === "en" ? "border-blue-400" : "border-green-400"
                 } pb-2`}
               >
                 {t.aboutMeTitle}
@@ -182,7 +182,7 @@ const MainPage = () => {
             <div className="mb-6" ref={(el) => (sectionsRef.current[1] = el)}>
               <h2
                 className={`text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 ${
-                  language === "en" ? "border-blue-400" : "border-green-500"
+                  language === "en" ? "border-blue-400" : "border-green-400"
                 } pb-2`}
               >
                 {t.education}
@@ -193,7 +193,7 @@ const MainPage = () => {
             <div className="mb-6" ref={(el) => (sectionsRef.current[2] = el)}>
               <h2
                 className={`text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 ${
-                  language === "en" ? "border-blue-400" : "border-green-500"
+                  language === "en" ? "border-blue-400" : "border-green-400"
                 } pb-2`}
               >
                 {t.experience}
@@ -205,7 +205,7 @@ const MainPage = () => {
             <div className="mb-6" ref={(el) => (sectionsRef.current[3] = el)}>
               <h2
                 className={`text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 ${
-                  language === "en" ? "border-blue-400" : "border-green-500"
+                  language === "en" ? "border-blue-400" : "border-green-400"
                 } pb-2`}
               >
                 {t.skills}
@@ -221,7 +221,7 @@ const MainPage = () => {
             <div className="mb-6" ref={(el) => (sectionsRef.current[4] = el)}>
               <h2
                 className={`text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 ${
-                  language === "en" ? "border-blue-400" : "border-green-500"
+                  language === "en" ? "border-blue-400" : "border-green-400"
                 } pb-2`}
               >
                 {t.languages}
@@ -237,7 +237,7 @@ const MainPage = () => {
             <div className="mb-6" ref={(el) => (sectionsRef.current[5] = el)}>
               <h2
                 className={`text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 ${
-                  language === "en" ? "border-blue-400" : "border-green-500"
+                  language === "en" ? "border-blue-400" : "border-green-400"
                 } pb-2`}
               >
                 {t.projects}
@@ -258,11 +258,11 @@ const MainPage = () => {
                       className={`block text-black transition-transform duration-300 ${
                         language === "en"
                           ? "hover:text-blue-400"
-                          : "hover:text-green-500"
+                          : "hover:text-green-400"
                       } ${
                         language === "en"
                           ? "dark:hover:text-blue-400"
-                          : "dark:hover:text-green-500"
+                          : "dark:hover:text-green-400"
                       } hover:scale-105`}
                     >
                       <div>
@@ -270,7 +270,7 @@ const MainPage = () => {
                           className={`${
                             language === "en"
                               ? "text-blue-400"
-                              : "text-green-500"
+                              : "text-green-400"
                           } ${
                             language === "en"
                               ? "dark:text-blue-400"
@@ -297,6 +297,14 @@ const MainPage = () => {
             &copy; {new Date().getFullYear()} Antonio Neto
           </div>
           <div className="footer-icons">
+            <a
+              href="https://wa.me/5531981070021"
+              className={`footer-icon no-hover ${
+                language === "en" ? "hover:text-blue-400" : ""
+              }`}
+            >
+              <FaWhatsapp />
+            </a>
             <a
               href="https://www.linkedin.com/in/antonioniet/"
               target="_blank"
