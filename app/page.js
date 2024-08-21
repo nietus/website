@@ -2,7 +2,13 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { FaDownload, FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import {
+  FaDownload,
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { FlagIcon } from "react-flag-kit";
 import translations from "./translations.json";
 
@@ -16,8 +22,8 @@ const MainPage = () => {
 
   useEffect(() => {
     setLoaded(true);
-    setInitialLoad(false); // Marcar o carregamento inicial como concluído após o primeiro render
-    changeBackground("pt"); // Definir o background inicial para "pt"
+    setInitialLoad(false); // Mark initial load as done after first render
+    changeBackground("pt"); // Set initial background to "pt"
   }, []);
 
   useEffect(() => {
@@ -148,7 +154,7 @@ const MainPage = () => {
         <div
           id="curriculum"
           className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl max-w-2xl w-11/12 md:w-4/6"
-          style={{ color: "black" }} // Garantir que a cor do texto seja preto sólido
+          style={{ color: "black" }} // Ensure text color is solid black
         >
           <div className="flex items-center mb-6">
             <div className="w-20 h-20 relative rounded-full overflow-hidden shadow-lg">
@@ -198,9 +204,29 @@ const MainPage = () => {
               >
                 {t.experience}
               </h2>
-              <p className="text-lg mb-4 dark:text-gray-300">
-                {t.experienceDetails}
-              </p>
+              <ul className="text-lg mb-4 space-y-6">
+                {t.experienceList.map((experience, index) => (
+                  <li
+                    key={index}
+                    className="bg-gray-100 rounded-lg shadow-sm dark:bg-gray-800"
+                  >
+                    <div className="flex justify-between items-center mb-2">
+                      <h3 className="text-black text-xl">
+                        {experience.company}
+                      </h3>
+                      <p className="text-base text-black">
+                        {experience.duration}
+                      </p>
+                    </div>
+                    <p className="italic text-base text-black mb-2">
+                      {experience.position}
+                    </p>
+                    <p className="text-sm text-black">
+                      {experience.description}
+                    </p>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="mb-6" ref={(el) => (sectionsRef.current[3] = el)}>
               <h2
@@ -250,7 +276,7 @@ const MainPage = () => {
                   <li
                     key={index}
                     className="transition-transform transform duration-300"
-                    style={{ display: "inline-block" }} // Garantir inline-block para a escala
+                    style={{ display: "inline-block" }} // Ensure inline-block for scaling
                   >
                     <a
                       target="_blank"
@@ -296,7 +322,7 @@ const MainPage = () => {
           <div className="footer-text">
             &copy; {new Date().getFullYear()} Antonio Neto
           </div>
-          <div className="footer-divider"></div> {/* Divider para a borda */}
+          <div className="footer-divider"></div> {/* Divider for border */}
           <div className="footer-icons">
             <a
               href="https://wa.me/5531981070021"

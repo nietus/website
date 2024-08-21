@@ -4,8 +4,8 @@
 
 body {
   @apply font-sans bg-light text-dark;
-  -webkit-user-select: none; /* Prevent text selection */
-  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 @keyframes fade-in-down {
@@ -31,15 +31,15 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  -webkit-user-select: none; /* Prevent text selection */
-  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; /* Diminuir o espaçamento entre os elementos */
+  gap: 1rem; 
 }
 
 .footer-text {
@@ -48,7 +48,7 @@ body {
 
 .footer-icons {
   display: flex;
-  gap: 1rem; /* Diminuir o espaçamento entre os ícones */
+  gap: 1rem; 
 }
 
 .footer-icon {

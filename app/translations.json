@@ -3,7 +3,7 @@
     "title": "Antonio Neto",
     "subtitle": "Student at PUC Minas",
     "aboutMeTitle": "About Me",
-    "aboutMe": "Hi, I am Antonio Neto, a Brazilian Computer Science student with a keen interest in Machine Learning, Generative AI and Data Science",
+    "aboutMe": "Hi, I am Antonio Neto, a Brazilian Computer Science student with a keen interest in Machine Learning, Generative AI, and Data Science",
     "education": "Education",
     "degree": "Computer Science Student (ongoing)",
     "confucius": "UFMG's Confucius Institute Mandarin Student (ongoing)",
@@ -35,7 +35,14 @@
       }
     ],
     "experience": "Experience",
-    "experienceDetails": "Open-Source and College Projects",
+    "experienceList": [
+      {
+        "company": "Deeptera",
+        "position": "Internship in Computing and Data",
+        "duration": "2024 - Present",
+        "description": "Research and development related to Artificial Intelligence"
+      }
+    ],
     "languages": "Languages",
     "languageList": [
       { "name": "English", "rating": 5 },
@@ -79,7 +86,14 @@
       }
     ],
     "experience": "Experiência",
-    "experienceDetails": "Open-Source e projetos de faculdade",
+    "experienceList": [
+      {
+        "company": "Deeptera",
+        "position": "Estágio em Computação e Dados",
+        "duration": "2024 - Presente",
+        "description": "Pesquisa e desenvolvimento relacionados a Inteligência Artificial"
+      }
+    ],
     "languages": "Idiomas",
     "languageList": [
       { "name": "Inglês", "rating": 5 },
