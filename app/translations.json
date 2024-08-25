@@ -5,16 +5,17 @@
     "aboutMeTitle": "About Me",
     "aboutMe": "Hi, I am Antonio Neto, a Brazilian Computer Science student with a keen interest in Machine Learning, Generative AI, and Data Science",
     "education": "Education",
-    "degree": "Computer Science Student (ongoing)",
+    "degree": "Computer Science Student at PUC Minas (ongoing)",
     "confucius": "UFMG's Confucius Institute Mandarin Student (ongoing)",
-    "skills": "Top-Skills",
+    "skills": "Most Used Skills",
     "skillsList": [
-      { "name": "Java, Python", "rating": 4 },
+      { "name": "C, Python", "rating": 4 },
       { "name": "PyTorch, Scikit-learn", "rating": 3 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 3 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
       { "name": "Docker", "rating": 3 },
-      { "name": "Git, GitHub", "rating": 5 }
+      { "name": "Git, GitHub", "rating": 5 },
+      { "name": "Excel", "rating": 4 }
     ],
     "projects": "Projects",
     "projectList": [
@@ -56,16 +57,17 @@
     "aboutMeTitle": "Sobre Mim",
     "aboutMe": "Oi, eu sou Antonio Neto, um estudante brasileiro de Ciência da Computação com bastante interesse em Machine Learning, IAs generativas e Ciência de Dados.",
     "education": "Educação",
-    "degree": "Estudante de Ciência da Computação (em andamento)",
+    "degree": "Estudante de Ciência da Computação PUC Minas (em andamento)",
     "confucius": "Estudante de Mandarim no Instituto Confúcio da UFMG (em andamento)",
-    "skills": "Top-Habilidades",
+    "skills": "Skills mais usadas",
     "skillsList": [
-      { "name": "Java, Python", "rating": 4 },
+      { "name": "C, Python", "rating": 4 },
       { "name": "PyTorch, Scikit-learn", "rating": 3 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 3 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
       { "name": "Docker", "rating": 3 },
-      { "name": "Git, GitHub", "rating": 5 }
+      { "name": "Git, GitHub", "rating": 5 },
+      { "name": "Excel", "rating": 4 }
     ],
     "projects": "Projetos",
     "projectList": [

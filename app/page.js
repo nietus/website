@@ -208,7 +208,6 @@ const MainPage = () => {
                 {t.experienceList.map((experience, index) => (
                   <li
                     key={index}
-                    className="bg-gray-100 rounded-lg shadow-sm dark:bg-gray-800"
                   >
                     <div className="flex justify-between items-center mb-2">
                       <h3 className="text-black text-xl">
