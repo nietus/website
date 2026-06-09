@@ -3,10 +3,10 @@
     "title": "Antonio Neto",
     "subtitle": "AI Engineer | Computer Science at PUC Minas",
     "aboutMeTitle": "About Me",
-    "aboutMe": "Hi, I am Antonio Neto, a Brazilian AI Engineer and Computer Science student at PUC Minas. I work with applied AI, LLM-powered systems, data pipelines, automation, and software engineering, with a strong interest in building useful agentic tools and production-ready machine learning workflows.",
+    "aboutMe": "Hi, I am Antonio Neto, a Brazilian AI Engineer and Computer Science student at PUC Minas. I work with applied AI, LLM-powered systems, data pipelines, infrastructure, and logistics problems, with a strong interest in building useful agentic tools and production-ready machine learning workflows.",
     "education": "Education",
     "degree": "Computer Science Student at PUC Minas (ongoing)",
-    "confucius": "Mandarin Chinese student at UFMG's Confucius Institute, currently around HSK 5 level",
+    "confucius": "Mandarin Chinese student at UFMG's Confucius Institute",
     "skills": "Most Used Skills",
     "skillsList": [
       { "name": "Python, C, JavaScript", "rating": 5 },
@@ -14,6 +14,7 @@
       { "name": "PyTorch, Scikit-learn", "rating": 4 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
       { "name": "FastAPI, APIs, automation", "rating": 4 },
+      { "name": "Infrastructure, Azure, Google Cloud", "rating": 4 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
       { "name": "Docker, Git, GitHub", "rating": 5 },
       { "name": "Excel, data analysis", "rating": 4 }
@@ -56,8 +57,14 @@
       {
         "company": "Deeptera",
         "position": "AI Engineer",
-        "duration": "2024 - Present",
+        "duration": "2026 - Present",
         "description": "Research and development of artificial intelligence solutions, with emphasis on applied AI, data workflows, automation, and LLM-based systems."
+      },
+      {
+        "company": "Deeptera",
+        "position": "Computing and Data Intern",
+        "duration": "2024 - 2026",
+        "description": "Internship focused on research and development related to artificial intelligence, data workflows, and applied machine learning."
       }
     ],
     "languages": "Languages",
@@ -71,10 +78,10 @@
     "title": "Antonio Neto",
     "subtitle": "AI Engineer | Ciência da Computação na PUC Minas",
     "aboutMeTitle": "Sobre Mim",
-    "aboutMe": "Oi, eu sou Antonio Neto, AI Engineer brasileiro e estudante de Ciência da Computação na PUC Minas. Trabalho com IA aplicada, sistemas com LLMs, pipelines de dados, automação e engenharia de software, com interesse especial em ferramentas agentic úteis e fluxos de machine learning prontos para uso real.",
+    "aboutMe": "Oi, eu sou Antonio Neto, AI Engineer brasileiro e estudante de Ciência da Computação na PUC Minas. Trabalho com IA aplicada, sistemas com LLMs, pipelines de dados, infraestrutura e problemas de logística, com interesse especial em ferramentas agentic úteis e fluxos de machine learning prontos para uso real.",
     "education": "Educação",
     "degree": "Estudante de Ciência da Computação na PUC Minas (em andamento)",
-    "confucius": "Estudante de mandarim no Instituto Confúcio da UFMG, atualmente próximo do nível HSK 5",
+    "confucius": "Estudante de mandarim no Instituto Confúcio da UFMG",
     "skills": "Skills mais usadas",
     "skillsList": [
       { "name": "Python, C, JavaScript", "rating": 5 },
@@ -82,6 +89,7 @@
       { "name": "PyTorch, Scikit-learn", "rating": 4 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
       { "name": "FastAPI, APIs, automação", "rating": 4 },
+      { "name": "Infraestrutura, Azure, Google Cloud", "rating": 4 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
       { "name": "Docker, Git, GitHub", "rating": 5 },
       { "name": "Excel, análise de dados", "rating": 4 }
@@ -124,8 +132,14 @@
       {
         "company": "Deeptera",
         "position": "AI Engineer",
-        "duration": "2024 - Presente",
+        "duration": "2026 - Presente",
         "description": "Pesquisa e desenvolvimento de soluções de inteligência artificial, com foco em IA aplicada, fluxos de dados, automação e sistemas baseados em LLMs."
+      },
+      {
+        "company": "Deeptera",
+        "position": "Estágio em Computação e Dados",
+        "duration": "2024 - 2026",
+        "description": "Estágio focado em pesquisa e desenvolvimento relacionados a inteligência artificial, fluxos de dados e machine learning aplicado."
       }
     ],
     "languages": "Idiomas",
