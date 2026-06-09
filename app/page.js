@@ -38,13 +38,15 @@ const MainPage = () => {
       { threshold: 0.1 }
     );
 
-    sectionsRef.current.forEach((section) => {
+    const observedSections = sectionsRef.current;
+
+    observedSections.forEach((section) => {
       observer.observe(section);
     });
 
     return () => {
-      if (sectionsRef.current) {
-        sectionsRef.current.forEach((section) => {
+      if (observedSections) {
+        observedSections.forEach((section) => {
           observer.unobserve(section);
         });
       }
@@ -54,7 +56,7 @@ const MainPage = () => {
   const renderStars = (rating) => {
     const totalStars = 5;
     return (
-      <div className="flex">
+      <div className="flex" aria-label={`${rating} out of ${totalStars}`}>
         {Array.from({ length: totalStars }, (v, i) => (
           <span
             key={i}
@@ -69,12 +71,10 @@ const MainPage = () => {
     );
   };
 
-  const switchLanguage = () => {
-    setLanguage((prevLang) => {
-      const newLang = prevLang === "pt" ? "en" : "pt";
-      changeBackground(newLang);
-      return newLang;
-    });
+  const switchLanguage = (newLang) => {
+    if (newLang === language) return;
+    setLanguage(newLang);
+    changeBackground(newLang);
   };
 
   const changeBackground = (lang) => {
@@ -153,7 +153,7 @@ const MainPage = () => {
         </div>
         <div
           id="curriculum"
-          className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl max-w-2xl w-11/12 md:w-4/6"
+          className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-2xl max-w-3xl w-11/12 md:w-4/6"
           style={{ color: "black" }} // Ensure text color is solid black
         >
           <div className="flex items-center mb-6">
@@ -280,6 +280,7 @@ const MainPage = () => {
                     <a
                       target="_blank"
                       href={project.link}
+                      rel="noopener noreferrer"
                       className={`block text-black transition-transform duration-300 ${
                         language === "en"
                           ? "hover:text-blue-400"

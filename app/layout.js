@@ -7,8 +7,9 @@ import Head from 'next/head';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Antonio Neto",
-  description: "Criado por Antonio Neto",
+  title: "Antonio Neto | AI Engineer",
+  description:
+    "Portfolio and curriculum of Antonio Neto, AI Engineer and Computer Science student at PUC Minas.",
 };
 
 export default function RootLayout({ children }) {

@@ -1,106 +1,138 @@
 {
   "en": {
     "title": "Antonio Neto",
-    "subtitle": "Student at PUC Minas",
+    "subtitle": "AI Engineer | Computer Science at PUC Minas",
     "aboutMeTitle": "About Me",
-    "aboutMe": "Hi, I am Antonio Neto, a Brazilian Computer Science student with a keen interest in Machine Learning, Generative AI, and Data Science",
+    "aboutMe": "Hi, I am Antonio Neto, a Brazilian AI Engineer and Computer Science student at PUC Minas. I work with applied AI, LLM-powered systems, data pipelines, automation, and software engineering, with a strong interest in building useful agentic tools and production-ready machine learning workflows.",
     "education": "Education",
     "degree": "Computer Science Student at PUC Minas (ongoing)",
-    "confucius": "UFMG's Confucius Institute Mandarin Student (ongoing)",
+    "confucius": "Mandarin Chinese student at UFMG's Confucius Institute, currently around HSK 5 level",
     "skills": "Most Used Skills",
     "skillsList": [
-      { "name": "C, Python", "rating": 4 },
-      { "name": "PyTorch, Scikit-learn", "rating": 3 },
-      { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 3 },
+      { "name": "Python, C, JavaScript", "rating": 5 },
+      { "name": "LLMs, RAG, AI agents, MCP", "rating": 4 },
+      { "name": "PyTorch, Scikit-learn", "rating": 4 },
+      { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
+      { "name": "FastAPI, APIs, automation", "rating": 4 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
-      { "name": "Docker", "rating": 3 },
-      { "name": "Git, GitHub", "rating": 5 },
-      { "name": "Excel", "rating": 4 }
+      { "name": "Docker, Git, GitHub", "rating": 5 },
+      { "name": "Excel, data analysis", "rating": 4 }
     ],
     "projects": "Projects",
     "projectList": [
       {
-        "title": "Estoque Master",
-        "description": "A project to manage stock efficiently.",
-        "link": "https://github.com/nietus/spark_crud"
-      },
-      {
-        "title": "AnimeDB",
-        "description": "Use of cryptography algorithms, pattern matching, data structures, and compression in an anime database.",
-        "link": "https://github.com/AnimeAEDS3/aeds3"
+        "title": "Anki MCP",
+        "description": "MCP server for Anki flashcard management, connecting AI assistants to study workflows and deck automation.",
+        "link": "https://github.com/nietus/anki-mcp"
       },
       {
         "title": "Agro 4.0",
-        "description": "Creation of AI models related to agriculture.",
+        "description": "Machine learning and optimization exercises for Agriculture 4.0, exploring applied AI models for real-world data.",
         "link": "https://github.com/nietus/agro4.0"
+      },
+      {
+        "title": "Blockchain BlockChat",
+        "description": "Blockchain simulator with Docker Compose deployment for distributed systems experiments.",
+        "link": "https://github.com/nietus/blockchain-blockchat"
+      },
+      {
+        "title": "AnimeDB",
+        "description": "Database project combining cryptography, pattern matching, data structures, and compression.",
+        "link": "https://github.com/AnimeAEDS3/aeds3"
+      },
+      {
+        "title": "Tomasulo Algorithm Simulator",
+        "description": "C++ implementation of the Tomasulo algorithm for superscalar processor simulation.",
+        "link": "https://github.com/nietus/Tomasulo"
+      },
+      {
+        "title": "Graph Implementations",
+        "description": "Graph data structure and algorithm implementations across multiple languages.",
+        "link": "https://github.com/nietus/grafos"
       }
     ],
     "experience": "Experience",
     "experienceList": [
       {
         "company": "Deeptera",
-        "position": "Internship in Computing and Data",
+        "position": "AI Engineer",
         "duration": "2024 - Present",
-        "description": "Research and development related to Artificial Intelligence"
+        "description": "Research and development of artificial intelligence solutions, with emphasis on applied AI, data workflows, automation, and LLM-based systems."
       }
     ],
     "languages": "Languages",
     "languageList": [
-      { "name": "English", "rating": 5 },
       { "name": "Portuguese", "rating": 5 },
-      { "name": "Chinese (zh)", "rating": 2 }
+      { "name": "English", "rating": 5 },
+      { "name": "Chinese / Mandarin (near HSK 5)", "rating": 4 }
     ]
   },
   "pt": {
     "title": "Antonio Neto",
-    "subtitle": "Estudante na PUC Minas",
+    "subtitle": "AI Engineer | Ciência da Computação na PUC Minas",
     "aboutMeTitle": "Sobre Mim",
-    "aboutMe": "Oi, eu sou Antonio Neto, um estudante brasileiro de Ciência da Computação com bastante interesse em Machine Learning, IAs generativas e Ciência de Dados.",
+    "aboutMe": "Oi, eu sou Antonio Neto, AI Engineer brasileiro e estudante de Ciência da Computação na PUC Minas. Trabalho com IA aplicada, sistemas com LLMs, pipelines de dados, automação e engenharia de software, com interesse especial em ferramentas agentic úteis e fluxos de machine learning prontos para uso real.",
     "education": "Educação",
-    "degree": "Estudante de Ciência da Computação PUC Minas (em andamento)",
-    "confucius": "Estudante de Mandarim no Instituto Confúcio da UFMG (em andamento)",
+    "degree": "Estudante de Ciência da Computação na PUC Minas (em andamento)",
+    "confucius": "Estudante de mandarim no Instituto Confúcio da UFMG, atualmente próximo do nível HSK 5",
     "skills": "Skills mais usadas",
     "skillsList": [
-      { "name": "C, Python", "rating": 4 },
-      { "name": "PyTorch, Scikit-learn", "rating": 3 },
-      { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 3 },
+      { "name": "Python, C, JavaScript", "rating": 5 },
+      { "name": "LLMs, RAG, agentes de IA, MCP", "rating": 4 },
+      { "name": "PyTorch, Scikit-learn", "rating": 4 },
+      { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
+      { "name": "FastAPI, APIs, automação", "rating": 4 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
-      { "name": "Docker", "rating": 3 },
-      { "name": "Git, GitHub", "rating": 5 },
-      { "name": "Excel", "rating": 4 }
+      { "name": "Docker, Git, GitHub", "rating": 5 },
+      { "name": "Excel, análise de dados", "rating": 4 }
     ],
     "projects": "Projetos",
     "projectList": [
       {
-        "title": "Estoque Master",
-        "description": "Um projeto para gerenciar estoque de forma eficiente.",
-        "link": "https://github.com/nietus/spark_crud"
-      },
-      {
-        "title": "AnimeDB",
-        "description": "Uso de algoritmos de criptografia, casamento de padrões, estruturas de dados e compactação em um banco de dados de anime.",
-        "link": "https://github.com/AnimeAEDS3/aeds3"
+        "title": "Anki MCP",
+        "description": "Servidor MCP para gerenciar flashcards no Anki, conectando assistentes de IA a fluxos de estudo e automação de decks.",
+        "link": "https://github.com/nietus/anki-mcp"
       },
       {
         "title": "Agro 4.0",
-        "description": "Criação de modelos de IA para a agricultura.",
+        "description": "Exercícios de machine learning e otimização para Agricultura 4.0, explorando modelos de IA aplicada com dados reais.",
         "link": "https://github.com/nietus/agro4.0"
+      },
+      {
+        "title": "Blockchain BlockChat",
+        "description": "Simulador de blockchain com deploy via Docker Compose para experimentos de sistemas distribuídos.",
+        "link": "https://github.com/nietus/blockchain-blockchat"
+      },
+      {
+        "title": "AnimeDB",
+        "description": "Projeto de banco de dados combinando criptografia, casamento de padrões, estruturas de dados e compactação.",
+        "link": "https://github.com/AnimeAEDS3/aeds3"
+      },
+      {
+        "title": "Simulador do Algoritmo de Tomasulo",
+        "description": "Implementação em C++ do algoritmo de Tomasulo para simulação de processadores superescalares.",
+        "link": "https://github.com/nietus/Tomasulo"
+      },
+      {
+        "title": "Implementações de Grafos",
+        "description": "Implementações de estruturas de dados e algoritmos de grafos em várias linguagens.",
+        "link": "https://github.com/nietus/grafos"
       }
     ],
     "experience": "Experiência",
     "experienceList": [
       {
         "company": "Deeptera",
-        "position": "Estágio em Computação e Dados",
+        "position": "AI Engineer",
         "duration": "2024 - Presente",
-        "description": "Pesquisa e desenvolvimento relacionados a Inteligência Artificial"
+        "description": "Pesquisa e desenvolvimento de soluções de inteligência artificial, com foco em IA aplicada, fluxos de dados, automação e sistemas baseados em LLMs."
       }
     ],
     "languages": "Idiomas",
     "languageList": [
-      { "name": "Inglês", "rating": 5 },
       { "name": "Português", "rating": 5 },
-      { "name": "Chinês (zh)", "rating": 2 }
+      { "name": "Inglês", "rating": 5 },
+      { "name": "Chinês / Mandarim (próximo do HSK 5)", "rating": 4 }
     ]
   }
 }
