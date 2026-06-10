@@ -9,7 +9,7 @@
     "confucius": "Mandarin student at UFMG's Confucius Institute (HSK 4)",
     "skills": "Most Used Skills",
     "skillsList": [
-      { "name": "Python, C, JavaScript", "rating": 5 },
+      { "name": "Python, C, TypeScript", "rating": 5 },
       { "name": "RAG, MCP, LangChain, Django", "rating": 4 },
       { "name": "PyTorch, Scikit-learn", "rating": 4 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
@@ -83,7 +83,7 @@
     "confucius": "Estudante de mandarim no Instituto Confúcio da UFMG (HSK 4)",
     "skills": "Skills mais usadas",
     "skillsList": [
-      { "name": "Python, C, JavaScript", "rating": 5 },
+      { "name": "Python, C, TypeScript", "rating": 5 },
       { "name": "RAG, MCP, LangChain, Django", "rating": 4 },
       { "name": "PyTorch, Scikit-learn", "rating": 4 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
