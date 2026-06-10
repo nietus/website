@@ -3,21 +3,20 @@
     "title": "Antonio Neto",
     "subtitle": "AI Engineer | Computer Science at PUC Minas",
     "aboutMeTitle": "About Me",
-    "aboutMe": "Hi, I am Antonio Neto, a Brazilian AI Engineer and Computer Science student at PUC Minas. I work with applied AI, LLM-powered systems, data pipelines, infrastructure, and logistics problems, with a strong interest in building useful agentic tools and production-ready machine learning workflows.",
+    "aboutMe": "Hi, I am Antonio Neto, a Brazilian AI Engineer and Computer Science student at PUC Minas. I work with applied AI, optimization, infrastructure, and logistics problems.",
     "education": "Education",
     "degree": "Computer Science Student at PUC Minas (ongoing)",
     "confucius": "Mandarin Chinese student at UFMG's Confucius Institute",
     "skills": "Most Used Skills",
     "skillsList": [
       { "name": "Python, C, JavaScript", "rating": 5 },
-      { "name": "LLMs, RAG, AI agents, MCP", "rating": 4 },
+      { "name": "RAG, MCP, LangChain, optimization", "rating": 4 },
       { "name": "PyTorch, Scikit-learn", "rating": 4 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
-      { "name": "FastAPI, APIs, automation", "rating": 4 },
-      { "name": "Infrastructure, Azure, Google Cloud", "rating": 4 },
+      { "name": "FastAPI, APIs", "rating": 4 },
+      { "name": "Azure, Google Cloud", "rating": 4 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
-      { "name": "Docker, Git, GitHub", "rating": 5 },
-      { "name": "Excel, data analysis", "rating": 4 }
+      { "name": "Docker, Git, GitHub", "rating": 5 }
     ],
     "projects": "Projects",
     "projectList": [
@@ -71,28 +70,27 @@
     "languageList": [
       { "name": "Portuguese", "rating": 5 },
       { "name": "English", "rating": 5 },
-      { "name": "Chinese / Mandarin (near HSK 5)", "rating": 4 }
+      { "name": "Mandarin (HSK 4)", "rating": 4 }
     ]
   },
   "pt": {
     "title": "Antonio Neto",
     "subtitle": "AI Engineer | Ciência da Computação na PUC Minas",
     "aboutMeTitle": "Sobre Mim",
-    "aboutMe": "Oi, eu sou Antonio Neto, AI Engineer brasileiro e estudante de Ciência da Computação na PUC Minas. Trabalho com IA aplicada, sistemas com LLMs, pipelines de dados, infraestrutura e problemas de logística, com interesse especial em ferramentas agentic úteis e fluxos de machine learning prontos para uso real.",
+    "aboutMe": "Oi, eu sou Antonio Neto, AI Engineer brasileiro e estudante de Ciência da Computação na PUC Minas. Trabalho com IA aplicada, otimização, infraestrutura e problemas de logística.",
     "education": "Educação",
     "degree": "Estudante de Ciência da Computação na PUC Minas (em andamento)",
     "confucius": "Estudante de mandarim no Instituto Confúcio da UFMG",
     "skills": "Skills mais usadas",
     "skillsList": [
       { "name": "Python, C, JavaScript", "rating": 5 },
-      { "name": "LLMs, RAG, agentes de IA, MCP", "rating": 4 },
+      { "name": "RAG, MCP, LangChain, otimização", "rating": 4 },
       { "name": "PyTorch, Scikit-learn", "rating": 4 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
-      { "name": "FastAPI, APIs, automação", "rating": 4 },
-      { "name": "Infraestrutura, Azure, Google Cloud", "rating": 4 },
+      { "name": "FastAPI, APIs", "rating": 4 },
+      { "name": "Azure, Google Cloud", "rating": 4 },
       { "name": "PostgreSQL, MySQL", "rating": 3 },
-      { "name": "Docker, Git, GitHub", "rating": 5 },
-      { "name": "Excel, análise de dados", "rating": 4 }
+      { "name": "Docker, Git, GitHub", "rating": 5 }
     ],
     "projects": "Projetos",
     "projectList": [
@@ -146,7 +144,7 @@
     "languageList": [
       { "name": "Português", "rating": 5 },
       { "name": "Inglês", "rating": 5 },
-      { "name": "Chinês / Mandarim (próximo do HSK 5)", "rating": 4 }
+      { "name": "Mandarim (HSK 4)", "rating": 4 }
     ]
   }
 }
