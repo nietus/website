@@ -6,11 +6,11 @@
     "aboutMe": "Hi, I am Antonio Neto, a Brazilian AI Engineer and Computer Science student at PUC Minas. I work with applied AI, optimization, infrastructure, and logistics problems.",
     "education": "Education",
     "degree": "Computer Science Student at PUC Minas (ongoing)",
-    "confucius": "Mandarin Chinese student at UFMG's Confucius Institute",
+    "confucius": "Mandarin student at UFMG's Confucius Institute (HSK 4)",
     "skills": "Most Used Skills",
     "skillsList": [
       { "name": "Python, C, JavaScript", "rating": 5 },
-      { "name": "RAG, MCP, LangChain, optimization", "rating": 4 },
+      { "name": "RAG, MCP, LangChain, Django", "rating": 4 },
       { "name": "PyTorch, Scikit-learn", "rating": 4 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
       { "name": "FastAPI, APIs", "rating": 4 },
@@ -55,15 +55,15 @@
     "experienceList": [
       {
         "company": "Deeptera",
-        "position": "AI Engineer",
-        "duration": "2026 - Present",
-        "description": "Research and development of artificial intelligence solutions, with emphasis on applied AI, data workflows, automation, and natural language processing."
+        "position": "Artificial Intelligence Engineer",
+        "duration": "Apr 2026 - Present",
+        "description": "Part-time remote role focused on R&D for optimization problems, multi-agent systems, and architectures for intelligent systems."
       },
       {
         "company": "Deeptera",
-        "position": "Computing and Data Intern",
-        "duration": "2024 - 2026",
-        "description": "Internship focused on research and development related to artificial intelligence, data workflows, and applied machine learning."
+        "position": "Computer Science Intern",
+        "duration": "Aug 2024 - Apr 2026",
+        "description": "Worked on an SBAI-approved paper about multi-agent systems, database architecture, Django backend development, Azure and Azure DevOps infrastructure, VLI service work involving optimization and backend systems, R&D, and genetic algorithms for optimization problems."
       }
     ],
     "languages": "Languages",
@@ -80,11 +80,11 @@
     "aboutMe": "Oi, eu sou Antonio Neto, AI Engineer brasileiro e estudante de Ciência da Computação na PUC Minas. Trabalho com IA aplicada, otimização, infraestrutura e problemas de logística.",
     "education": "Educação",
     "degree": "Estudante de Ciência da Computação na PUC Minas (em andamento)",
-    "confucius": "Estudante de mandarim no Instituto Confúcio da UFMG",
+    "confucius": "Estudante de mandarim no Instituto Confúcio da UFMG (HSK 4)",
     "skills": "Skills mais usadas",
     "skillsList": [
       { "name": "Python, C, JavaScript", "rating": 5 },
-      { "name": "RAG, MCP, LangChain, otimização", "rating": 4 },
+      { "name": "RAG, MCP, LangChain, Django", "rating": 4 },
       { "name": "PyTorch, Scikit-learn", "rating": 4 },
       { "name": "Pandas, NumPy, Matplotlib, Seaborn", "rating": 4 },
       { "name": "FastAPI, APIs", "rating": 4 },
@@ -129,15 +129,15 @@
     "experienceList": [
       {
         "company": "Deeptera",
-        "position": "AI Engineer",
-        "duration": "2026 - Presente",
-        "description": "Pesquisa e desenvolvimento de soluções de inteligência artificial, com foco em IA aplicada, fluxos de dados, automação e processamento de linguagem natural."
+        "position": "Artificial Intelligence Engineer",
+        "duration": "abr de 2026 - o momento",
+        "description": "Atuação remota em meio período com P&D em problemas de otimização e sistemas multiagentes, além de arquiteturas para sistemas inteligentes."
       },
       {
         "company": "Deeptera",
-        "position": "Estágio em Computação e Dados",
-        "duration": "2024 - 2026",
-        "description": "Estágio focado em pesquisa e desenvolvimento relacionados a inteligência artificial, fluxos de dados e machine learning aplicado."
+        "position": "Estagiário de Ciência da Computação",
+        "duration": "ago de 2024 - abr de 2026",
+        "description": "Artigo sobre sistemas multiagentes aprovado no SBAI, arquitetura de bancos e backend Django, infraestrutura Azure/Azure DevOps, prestação de serviços para VLI com otimização e backend, desenvolvimento e pesquisa, e algoritmos genéticos para problemas de otimização."
       }
     ],
     "languages": "Idiomas",
