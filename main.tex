@@ -1,0 +1,129 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+
+% Define an olive green color
+\definecolor{olivegreen}{RGB}{85,107,47}
+
+\titleformat{\section}{\large\bfseries\color{olivegreen}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}[runin]{\bfseries\color{olivegreen}}{}{0em}{}[:]
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{Last updated: \today}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge Antonio Neto} \\
+    \vspace{2mm}
+    \faIcon{briefcase} AI Engineer $|$ Computer Science Student
+\end{center}
+
+\vspace{4mm}
+\begin{center}
+    \faIcon{graduation-cap} \href{https://lattes.cnpq.br/6284651096866272}{Lattes} \hspace{1.5cm}
+    \faIcon{github} \href{https://github.com/nietus}{Github} \hspace{1.5cm}
+    \faIcon{envelope} \href{mailto:antonio@deeptera.com}{Email} \hspace{1.5cm}
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/antonioniet/}{Linkedin} \hspace{1.5cm}
+    \faIcon{globe} \href{https://antonio.niet.com.br}{Website}
+\end{center}
+
+\space
+\section*{\faIcon{user} Professional Profile}
+I am a Brazilian AI Engineer and Computer Science student at PUC Minas, working with applied AI, optimization, infrastructure, and logistics problems. My research and development work covers LLM-based multi-agent systems, metaheuristics, and machine learning applied to industrial and logistics scenarios, with five accepted papers. I also study Mandarin at UFMG's Confucius Institute. I am highly focused, detail-oriented, and committed to everything I do.
+
+\section*{\faIcon{building} Professional Experience}
+
+\subsection*{Deeptera \hfill Apr 2026 -- Present}
+\textit{Artificial Intelligence Engineer} \\
+Part-time remote role focused on research and development
+\begin{itemize}
+    \item Research and development on optimization problems and multi-agent systems.
+    \item Designed architectures for intelligent systems integrated into conventional software.
+    \item Authored papers accepted at SBPO and SIMPEP on optimization and multi-agent systems.
+\end{itemize}
+
+\subsection*{Deeptera \hfill Aug 2024 -- Apr 2026}
+\textit{Internship in Computing and Data} \\
+Research and development
+\begin{itemize}
+    \item Published article on multi-agent systems approved at SBAI.
+    \item Participated in projects funded by FAPEMIG.
+    \item Designed database architecture and Django backend using Azure and Azure DevOps infrastructure.
+    \item Provided optimization and backend services for VLI.
+    \item Conducted specialized development and research related to multi-agent systems, with application of RAG algorithms, personalized tools and scalable services.
+    \item Applied genetic algorithms to solve optimization problems.
+\end{itemize}
+
+\subsection*{Hackatruck \hfill 2023}
+\textit{Project Participant} \\
+Developed iOS applications as part of a month-long group project.
+\begin{itemize}
+    \item Collaborated with team members to design and implement app functionalities.
+    \item Used Swift, Node Red and Azure for development, handling various APIs.
+\end{itemize}
+
+\section*{\faIcon{book} Publications}
+\begin{itemize}[label=\faIcon{file-alt}]
+    \needspace{4\baselineskip}\item \textbf{Uma Abordagem Baseada em Atenção para o Problema de Coletas e Entregas Dinâmicas.} A. Neto, R. D. Macedo, A. H. Duque, S. J. de Almeida. LVIII SBPO, 2026. \\
+    Attention Model trained with Reinforcement Learning and combined with VNS for the Dynamic Pickup and Delivery Problem, evaluated on the ICAPS 2021 benchmark.
+    \needspace{4\baselineskip}\item \textbf{DeepFactory: Sistema Multiagentes para Gestão e Otimização de Produção Industrial.} R. D. Macedo, A. Neto, A. H. Duque, S. J. de Almeida. LVIII SBPO, 2026. \\
+    Stage-oriented multi-agent platform integrating MIP scheduling, demand forecasting, predictive maintenance and computer-vision quality control.
+    \needspace{4\baselineskip}\item \textbf{Otimização do Sequenciamento de Operações de Carregamento e Descarregamento de Navios Graneleiros com Restrição de Trim via Algoritmo Genético.} A. Neto, R. D. Macedo, C. S. Almeida et al. (with VLI Multimodal). LVIII SBPO, 2026. \\
+    Genetic algorithm with trim constraints validated on 112 real operational plans from a multimodal logistics company.
+    \needspace{4\baselineskip}\item \textbf{Roteamento Multi-Período de Drones com Janelas de Tempo e Disponibilização Gradual de Estações de Recarga.} A. S. C. Neto, Z. K. G. do Patrocínio. SIMPEP, 2026. \\
+    Undergraduate thesis: MP-EAVNS, an energy-aware Variable Neighborhood Search for a multi-period extension of the E-VRPTW.
+    \needspace{4\baselineskip}\item \textbf{Proposta de um Sistema Multiagentes baseado em LLM: Integração em um Software de Gerenciamento e Otimização de Carregamento e Descarregamento de Navios.} A. Neto, C. S. Almeida, R. D. Macedo, A. H. Duque, S. J. de Almeida. SBAI/SBSE, 2025. \\
+    Hierarchical LLM multi-agent system (Manager, Helper, Optimizer and Data Analytics) integrated into a conventional ship loading and unloading system.
+\end{itemize}
+
+\section*{\faIcon{graduation-cap} Education}
+
+\subsection*{PUC Minas \hfill 2023 -- Present}
+\textit{Bachelor of Computer Science} \\
+I have worked with various technologies at PUC and specialized in machine learning, data science, and AI technologies outside of college. My undergraduate thesis addresses multi-period drone routing with time windows and gradual charging-station deployment, advised by Prof. Zenilton K. G. do Patrocínio.
+
+\subsection*{Confucius Institute (UFMG) \hfill 2024 -- Present}
+\textit{Mandarin Student (HSK 4)} \\
+I study Mandarin out of a deep appreciation for the culture and its relevance to the field of AI.
+
+\section*{\faIcon{cogs} Key Technical Skills}
+\begin{center}
+    \begin{itemize}[label=\faIcon{check}, itemsep=-3pt]
+        \item \textbf{Programming Languages:} Python, C, TypeScript
+        \item \textbf{Agent Systems:} LangChain, LangGraph, RAG, MCP
+        \item \textbf{Machine Learning:} PyTorch, Scikit-learn, XGBoost
+        \item \textbf{Data Science:} Pandas, NumPy, Matplotlib, Seaborn
+        \item \textbf{Backend:} Django, FastAPI, REST APIs
+        \item \textbf{Databases:} PostgreSQL, MySQL
+        \item \textbf{DevOps:} Azure DevOps, Docker
+        \item \textbf{Version Control:} Git, GitHub
+        \item \textbf{Optimization:} AMPL, pyomo, GLPK/SCIP solvers, metaheuristics (GA, VNS, ALNS, GRASP)
+        \item \textbf{Cloud:} Azure, Google Cloud
+
+    \end{itemize}
+\end{center}
+
+\section*{\faIcon{certificate} Certifications}
+\begin{itemize}[label=\faIcon{certificate}]
+    \item Cloud Services Practices using Swift with emphasis on Cognitive Services
+    \item Algorithms and OOP with Swift, JavaScript, and RESTful APIs
+    \item Agriculture 4.0: Optimizing with Artificial Intelligence
+\end{itemize}
+
+\section*{\faIcon{language} Languages}
+\begin{itemize}[label=\faIcon{globe}]
+    \item Portuguese - Native
+    \item English - Fluent
+    \item Mandarin - HSK 4
+\end{itemize}
+
+\end{document}

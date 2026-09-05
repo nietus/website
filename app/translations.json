@@ -61,6 +61,34 @@
         "link": "https://github.com/nietus/grafos"
       }
     ],
+    "publications": "Publications",
+    "publicationList": [
+      {
+        "title": "Uma Abordagem Baseada em Atenção para o Problema de Coletas e Entregas Dinâmicas",
+        "venue": "LVIII SBPO, 2026 - Attention Model with Reinforcement Learning and VNS for the Dynamic Pickup and Delivery Problem, evaluated on the ICAPS 2021 benchmark.",
+        "link": ""
+      },
+      {
+        "title": "DeepFactory: Sistema Multiagentes para Gestão e Otimização de Produção Industrial",
+        "venue": "LVIII SBPO, 2026 - Stage-oriented multi-agent platform integrating MIP scheduling, demand forecasting, predictive maintenance and computer-vision quality control.",
+        "link": "https://github.com/Deeptera/DeepFactory-Sistema-Multi-Agentes"
+      },
+      {
+        "title": "Otimização do Sequenciamento de Operações de Carregamento e Descarregamento de Navios Graneleiros com Restrição de Trim via Algoritmo Genético",
+        "venue": "LVIII SBPO, 2026 - Genetic algorithm with trim constraints validated on 112 real operational plans from a multimodal logistics company.",
+        "link": ""
+      },
+      {
+        "title": "Roteamento Multi-Período de Drones com Janelas de Tempo e Disponibilização Gradual de Estações de Recarga",
+        "venue": "SIMPEP, 2026 - Undergraduate thesis: MP-EAVNS, an energy-aware Variable Neighborhood Search for a multi-period extension of the E-VRPTW.",
+        "link": "https://github.com/nietus/tcc"
+      },
+      {
+        "title": "Proposta de um Sistema Multiagentes baseado em LLM: Integração em um Software de Gerenciamento e Otimização de Carregamento e Descarregamento de Navios",
+        "venue": "SBAI/SBSE, 2025 - Hierarchical LLM multi-agent system (Manager, Helper, Optimizer, Data Analytics) integrated into a conventional ship loading system.",
+        "link": "https://github.com/Deeptera/SMA"
+      }
+    ],
     "experience": "Experience",
     "experienceList": [
       {
@@ -143,6 +171,34 @@
         "title": "Implementações de Grafos",
         "description": "Implementações de estruturas de dados e algoritmos de grafos em várias linguagens.",
         "link": "https://github.com/nietus/grafos"
+      }
+    ],
+    "publications": "Publicações",
+    "publicationList": [
+      {
+        "title": "Uma Abordagem Baseada em Atenção para o Problema de Coletas e Entregas Dinâmicas",
+        "venue": "LVIII SBPO, 2026 - Modelo de Atenção treinado com Aprendizado por Reforço e VNS para o Problema de Coletas e Entregas Dinâmicas, avaliado no benchmark ICAPS 2021.",
+        "link": ""
+      },
+      {
+        "title": "DeepFactory: Sistema Multiagentes para Gestão e Otimização de Produção Industrial",
+        "venue": "LVIII SBPO, 2026 - Plataforma multiagente orientada a estágios, integrando sequenciamento MIP, previsão de demanda, manutenção preditiva e controle de qualidade por visão computacional.",
+        "link": "https://github.com/Deeptera/DeepFactory-Sistema-Multi-Agentes"
+      },
+      {
+        "title": "Otimização do Sequenciamento de Operações de Carregamento e Descarregamento de Navios Graneleiros com Restrição de Trim via Algoritmo Genético",
+        "venue": "LVIII SBPO, 2026 - Algoritmo genético com restrição de trim validado em 112 planos operacionais reais de uma empresa de logística multimodal.",
+        "link": ""
+      },
+      {
+        "title": "Roteamento Multi-Período de Drones com Janelas de Tempo e Disponibilização Gradual de Estações de Recarga",
+        "venue": "SIMPEP, 2026 - TCC: MP-EAVNS, uma Busca em Vizinhança Variável sensível à energia para uma extensão multi-período do E-VRPTW.",
+        "link": "https://github.com/nietus/tcc"
+      },
+      {
+        "title": "Proposta de um Sistema Multiagentes baseado em LLM: Integração em um Software de Gerenciamento e Otimização de Carregamento e Descarregamento de Navios",
+        "venue": "SBAI/SBSE, 2025 - Sistema multiagente hierárquico com LLM (Manager, Helper, Optimizer e Data Analytics) integrado a um software convencional de carregamento de navios.",
+        "link": "https://github.com/Deeptera/SMA"
       }
     ],
     "experience": "Experiência",

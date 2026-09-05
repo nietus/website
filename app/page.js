@@ -314,6 +314,69 @@ const MainPage = () => {
                 ))}
               </ul>
             </div>
+            <div className="mb-6" ref={(el) => (sectionsRef.current[6] = el)}>
+              <h2
+                className={`text-2xl font-semibold text-primary dark:text-white mt-4 mb-2 border-b-2 ${
+                  language === "en" ? "border-blue-400" : "border-green-400"
+                } pb-2`}
+              >
+                {t.publications}
+              </h2>
+              <ul
+                className="text-lg mb-4 dark:text-gray-300 list-disc list-inside space-y-2"
+                style={{ listStyleType: "none" }}
+              >
+                {t.publicationList.map((publication, index) => {
+                  const content = (
+                    <div>
+                      <span
+                        className={`${
+                          language === "en" ? "text-blue-400" : "text-green-400"
+                        } ${
+                          language === "en"
+                            ? "dark:text-blue-400"
+                            : "dark:text-green-300"
+                        }`}
+                      >
+                        {publication.title}
+                      </span>
+                      <p className="text-sm dark:text-gray-400">
+                        {publication.venue}
+                      </p>
+                    </div>
+                  );
+
+                  return (
+                    <li
+                      key={index}
+                      className="transition-transform transform duration-300"
+                      style={{ display: "inline-block" }}
+                    >
+                      {publication.link ? (
+                        <a
+                          target="_blank"
+                          href={publication.link}
+                          rel="noopener noreferrer"
+                          className={`block text-black transition-transform duration-300 ${
+                            language === "en"
+                              ? "hover:text-blue-400"
+                              : "hover:text-green-400"
+                          } ${
+                            language === "en"
+                              ? "dark:hover:text-blue-400"
+                              : "dark:hover:text-green-400"
+                          } hover:scale-105`}
+                        >
+                          {content}
+                        </a>
+                      ) : (
+                        <div className="block text-black">{content}</div>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
