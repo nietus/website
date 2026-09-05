@@ -22,17 +22,27 @@
     "projectList": [
       {
         "title": "Anki MCP",
-        "description": "MCP server for Anki flashcard management, connecting AI assistants to study workflows and deck automation.",
+        "description": "MCP server for Anki, published on Smithery, that lets AI assistants create decks, manage flashcards, drive reviews and generate audio via Azure TTS.",
         "link": "https://github.com/nietus/anki-mcp"
       },
       {
-        "title": "Agro 4.0",
-        "description": "Machine learning and optimization exercises for Agriculture 4.0, exploring applied AI models for real-world data.",
-        "link": "https://github.com/nietus/agro4.0"
+        "title": "Drone Routing Optimization",
+        "description": "Undergraduate thesis research on multi-period drone routing with time windows and recharging stations, with a reproducible GRASP/VNS harness over E-VRPTW benchmark instances.",
+        "link": "https://github.com/nietus/tcc"
+      },
+      {
+        "title": "Skin IA - Distributed System",
+        "description": "Distributed dermatological image analysis with three gRPC nodes, Nginx least-conn load balancing, classic distributed algorithms and Docker Compose deployment.",
+        "link": "https://github.com/nietus/Computacao-Distribuida"
+      },
+      {
+        "title": "Skin IA - Web Interface",
+        "description": "Frontend for the Skin IA system: image upload, real-time AI predictions, analysis history and live monitoring of the distributed cluster.",
+        "link": "https://github.com/nietus/front-skinai"
       },
       {
         "title": "Blockchain BlockChat",
-        "description": "Blockchain simulator with Docker Compose deployment for distributed systems experiments.",
+        "description": "Blockchain simulator with Docker Compose deployment, paired with a Rust relay server for P2P connections between peers.",
         "link": "https://github.com/nietus/blockchain-blockchat"
       },
       {
@@ -96,17 +106,27 @@
     "projectList": [
       {
         "title": "Anki MCP",
-        "description": "Servidor MCP para gerenciar flashcards no Anki, conectando assistentes de IA a fluxos de estudo e automação de decks.",
+        "description": "Servidor MCP para o Anki, publicado na Smithery, que permite a assistentes de IA criar decks, gerenciar flashcards, conduzir revisões e gerar áudio com Azure TTS.",
         "link": "https://github.com/nietus/anki-mcp"
       },
       {
-        "title": "Agro 4.0",
-        "description": "Exercícios de machine learning e otimização para Agricultura 4.0, explorando modelos de IA aplicada com dados reais.",
-        "link": "https://github.com/nietus/agro4.0"
+        "title": "Otimização de Rotas de Drones",
+        "description": "Pesquisa de TCC sobre roteamento multiperíodo de drones com janelas de tempo e estações de recarga, com experimentos reprodutíveis em GRASP/VNS sobre instâncias E-VRPTW.",
+        "link": "https://github.com/nietus/tcc"
+      },
+      {
+        "title": "Skin IA - Sistema Distribuído",
+        "description": "Análise distribuída de imagens dermatológicas com três nós em gRPC, balanceamento de carga com Nginx, algoritmos clássicos de sistemas distribuídos e deploy via Docker Compose.",
+        "link": "https://github.com/nietus/Computacao-Distribuida"
+      },
+      {
+        "title": "Skin IA - Interface Web",
+        "description": "Frontend do Skin IA: upload de imagens, predições de IA em tempo real, histórico de análises e monitoramento do cluster distribuído.",
+        "link": "https://github.com/nietus/front-skinai"
       },
       {
         "title": "Blockchain BlockChat",
-        "description": "Simulador de blockchain com deploy via Docker Compose para experimentos de sistemas distribuídos.",
+        "description": "Simulador de blockchain com deploy via Docker Compose, acompanhado de um relay server em Rust para conexões P2P entre os pares.",
         "link": "https://github.com/nietus/blockchain-blockchat"
       },
       {
