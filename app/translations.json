@@ -31,14 +31,14 @@
         "link": "https://github.com/nietus/tcc"
       },
       {
-        "title": "Skin IA - Distributed System",
-        "description": "Distributed dermatological image analysis with three gRPC nodes, Nginx least-conn load balancing, classic distributed algorithms and Docker Compose deployment.",
-        "link": "https://github.com/nietus/Computacao-Distribuida"
+        "title": "Personal Website",
+        "description": "This site: a bilingual digital CV built with Next.js and Tailwind, deployed on Vercel.",
+        "link": "https://github.com/nietus/website"
       },
       {
-        "title": "Skin IA - Web Interface",
-        "description": "Frontend for the Skin IA system: image upload, real-time AI predictions, analysis history and live monitoring of the distributed cluster.",
-        "link": "https://github.com/nietus/front-skinai"
+        "title": "PNS Health Data ML",
+        "description": "Machine learning pipelines over Brazil's National Health Survey, modelling hospital admissions and traffic accidents.",
+        "link": "https://github.com/nietus/pns"
       },
       {
         "title": "Blockchain BlockChat",
@@ -71,7 +71,7 @@
       {
         "title": "DeepFactory: Sistema Multiagentes para Gestão e Otimização de Produção Industrial",
         "venue": "LVIII SBPO, 2026 - Stage-oriented multi-agent platform integrating MIP scheduling, demand forecasting, predictive maintenance and computer-vision quality control.",
-        "link": "https://github.com/Deeptera/DeepFactory-Sistema-Multi-Agentes"
+        "link": ""
       },
       {
         "title": "Otimização do Sequenciamento de Operações de Carregamento e Descarregamento de Navios Graneleiros com Restrição de Trim via Algoritmo Genético",
@@ -81,12 +81,12 @@
       {
         "title": "Roteamento Multi-Período de Drones com Janelas de Tempo e Disponibilização Gradual de Estações de Recarga",
         "venue": "SIMPEP, 2026 - Undergraduate thesis: MP-EAVNS, an energy-aware Variable Neighborhood Search for a multi-period extension of the E-VRPTW.",
-        "link": "https://github.com/nietus/tcc"
+        "link": ""
       },
       {
         "title": "Proposta de um Sistema Multiagentes baseado em LLM: Integração em um Software de Gerenciamento e Otimização de Carregamento e Descarregamento de Navios",
         "venue": "SBAI/SBSE, 2025 - Hierarchical LLM multi-agent system (Manager, Helper, Optimizer, Data Analytics) integrated into a conventional ship loading system.",
-        "link": "https://github.com/Deeptera/SMA"
+        "link": ""
       }
     ],
     "experience": "Experience",
@@ -143,14 +143,14 @@
         "link": "https://github.com/nietus/tcc"
       },
       {
-        "title": "Skin IA - Sistema Distribuído",
-        "description": "Análise distribuída de imagens dermatológicas com três nós em gRPC, balanceamento de carga com Nginx, algoritmos clássicos de sistemas distribuídos e deploy via Docker Compose.",
-        "link": "https://github.com/nietus/Computacao-Distribuida"
+        "title": "Site Pessoal",
+        "description": "Este site: currículo digital bilíngue feito em Next.js e Tailwind, com deploy na Vercel.",
+        "link": "https://github.com/nietus/website"
       },
       {
-        "title": "Skin IA - Interface Web",
-        "description": "Frontend do Skin IA: upload de imagens, predições de IA em tempo real, histórico de análises e monitoramento do cluster distribuído.",
-        "link": "https://github.com/nietus/front-skinai"
+        "title": "Machine Learning com a PNS",
+        "description": "Pipelines de machine learning sobre a Pesquisa Nacional de Saúde, modelando internações e acidentes de trânsito.",
+        "link": "https://github.com/nietus/pns"
       },
       {
         "title": "Blockchain BlockChat",
@@ -183,7 +183,7 @@
       {
         "title": "DeepFactory: Sistema Multiagentes para Gestão e Otimização de Produção Industrial",
         "venue": "LVIII SBPO, 2026 - Plataforma multiagente orientada a estágios, integrando sequenciamento MIP, previsão de demanda, manutenção preditiva e controle de qualidade por visão computacional.",
-        "link": "https://github.com/Deeptera/DeepFactory-Sistema-Multi-Agentes"
+        "link": ""
       },
       {
         "title": "Otimização do Sequenciamento de Operações de Carregamento e Descarregamento de Navios Graneleiros com Restrição de Trim via Algoritmo Genético",
@@ -193,12 +193,12 @@
       {
         "title": "Roteamento Multi-Período de Drones com Janelas de Tempo e Disponibilização Gradual de Estações de Recarga",
         "venue": "SIMPEP, 2026 - TCC: MP-EAVNS, uma Busca em Vizinhança Variável sensível à energia para uma extensão multi-período do E-VRPTW.",
-        "link": "https://github.com/nietus/tcc"
+        "link": ""
       },
       {
         "title": "Proposta de um Sistema Multiagentes baseado em LLM: Integração em um Software de Gerenciamento e Otimização de Carregamento e Descarregamento de Navios",
         "venue": "SBAI/SBSE, 2025 - Sistema multiagente hierárquico com LLM (Manager, Helper, Optimizer e Data Analytics) integrado a um software convencional de carregamento de navios.",
-        "link": "https://github.com/Deeptera/SMA"
+        "link": ""
       }
     ],
     "experience": "Experiência",
