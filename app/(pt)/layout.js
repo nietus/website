@@ -1,8 +1,8 @@
 import "../globals.css";
 
 export const metadata = {
-  title: "Antonio S. C. Neto | Otimização e IA",
-  description: "Página pessoal de Antonio S. C. Neto, estudante de Ciência da Computação na PUC Minas: publicações, interesses de pesquisa e currículo.",
+  title: "Antonio Neto | Otimização e IA",
+  description: "Página pessoal de Antonio Neto, estudante de Ciência da Computação na PUC Minas: publicações, interesses de pesquisa e currículo.",
   icons: { icon: "/favicon.ico" },
 };
 

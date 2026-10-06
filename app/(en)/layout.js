@@ -1,8 +1,8 @@
 import "../globals.css";
 
 export const metadata = {
-  title: "Antonio S. C. Neto | Optimization and AI",
-  description: "Personal page of Antonio S. C. Neto, final-year Computer Science undergraduate at PUC Minas, Brazil: publications, research interests and CV.",
+  title: "Antonio Neto | Optimization and AI",
+  description: "Personal page of Antonio Neto, final-year Computer Science undergraduate at PUC Minas, Brazil: publications, research interests and CV.",
   icons: { icon: "/favicon.ico" },
 };
 

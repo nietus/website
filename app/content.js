@@ -1,6 +1,6 @@
 // All page copy. Paper facts (authors, venues, results) follow the PDFs in /public/papers.
 
-const ME = "Antonio S. C. Neto";
+const ME = "Antonio Neto";
 
 const papers = [
   {
