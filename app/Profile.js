@@ -96,7 +96,7 @@ const Profile = ({ lang }) => {
           <ol className="space-y-6">
             {papers.map((p) => (
               <li key={p.id}>
-                <a href={`/paper/${p.id}`} className="font-semibold leading-snug text-blue-700 underline">
+                <a href={p.pdf} target="_blank" rel="noopener noreferrer" className="font-semibold leading-snug text-blue-700 underline">
                   {lang === "pt" ? p.titleOriginal : p.titleEn}
                 </a>
                 <p className="text-sm italic text-slate-500">
@@ -118,7 +118,7 @@ const Profile = ({ lang }) => {
                 </p>
                 <p className="mt-1">{p.result[lang]}</p>
                 <p className="mt-1 text-sm">
-                  <a href={p.pdf} className="text-blue-700 underline">
+                  <a href={p.pdf} target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">
                     {t.pdfLabel}
                   </a>
                   {p.code && (
