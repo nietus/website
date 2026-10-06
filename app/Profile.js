@@ -51,7 +51,7 @@ const Profile = ({ lang }) => {
 
         <header className="mt-4 flex items-center gap-5">
           <div className="relative h-20 w-20 sm:h-24 sm:w-24 shrink-0 overflow-hidden rounded-full border border-slate-200">
-            <Image src="/profile_picture.jpeg" alt={t.name} fill sizes="240px" className="object-cover" style={{ objectPosition: "50% 0%", transform: "scale(2)", transformOrigin: "50% 20%" }} priority />
+            <Image src="/profile_picture.jpeg" alt={t.name} fill sizes="240px" className="object-cover" style={{ objectPosition: "50% 4%", transform: "scale(2)", transformOrigin: "50% 20%" }} priority />
           </div>
           <div>
             <h1 className="text-3xl font-bold text-slate-900">{t.name}</h1>
