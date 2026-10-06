@@ -89,6 +89,9 @@ const papers = [
 const text = {
   en: {
     htmlLang: "en",
+    languageLabel: "Language",
+    sectionsLabel: "Page sections",
+    skipLabel: "Skip to content",
     name: ME,
     headline: "Final-year Computer Science undergraduate, PUC Minas, Brazil",
     tagline: "Combinatorial optimization · reinforcement learning · multi-agent systems",
@@ -142,6 +145,9 @@ const text = {
   },
   zh: {
     htmlLang: "zh-CN",
+    languageLabel: "语言",
+    sectionsLabel: "页面章节",
+    skipLabel: "跳至正文",
     name: ME,
     headline: "巴西米纳斯吉拉斯天主教大学（PUC Minas）计算机科学专业本科四年级学生",
     tagline: "组合优化 · 强化学习 · 多智能体系统",
@@ -196,6 +202,9 @@ const text = {
   },
   pt: {
     htmlLang: "pt-BR",
+    languageLabel: "Idioma",
+    sectionsLabel: "Seções da página",
+    skipLabel: "Ir para o conteúdo",
     name: ME,
     headline: "Estudante do último ano de Ciência da Computação, PUC Minas",
     tagline: "Otimização combinatória · aprendizado por reforço · sistemas multiagentes",
