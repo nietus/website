@@ -111,7 +111,7 @@ const text = {
     educationTitle: "Education",
     education: [
       { what: "B.Sc. in Computer Science, Pontifical Catholic University of Minas Gerais (PUC Minas), Brazil", when: "2023 – Dec 2026 (expected)", detail: "Thesis: multi-period drone routing with time windows and gradual deployment of charging stations, advised by Prof. Zenilton K. G. do Patrocínio. Selected grades (out of 100, pass mark 60): Thesis Project I 98, Design and Analysis of Algorithms 88, Artificial Intelligence 82, Graph Theory and Computability 80." },
-      { what: "Mandarin, Confucius Institute at UFMG", when: "2024 – present", detail: "Currently at HSK 4 level; I will sit the HSK 4 exam in November 2026." },
+      { what: "Mandarin, Confucius Institute at UFMG", when: "2024 – present", detail: "Currently at HSK 4 level." },
     ],
     experienceTitle: "Experience",
     experience: [
@@ -152,7 +152,7 @@ const text = {
     about: [
       "我是巴西米纳斯吉拉斯天主教大学（PUC Minas）计算机科学专业的本科四年级学生，将于 2026 年 12 月毕业，同时在 Deeptera 公司担任人工智能工程师。",
       "我在巴西全国性学术会议 SBPO（巴西运筹学研讨会）、SIMPEP（巴西生产工程研讨会）和 SBAI（巴西智能自动化研讨会）上发表或被录用了五篇经同行评审的论文，其中四篇为第一作者，内容包括路径优化与调度问题的元启发式算法、动态取送货问题的强化学习方法，以及面向工业软件的大语言模型多智能体系统。",
-      "我在米纳斯吉拉斯联邦大学（UFMG）孔子学院学习中文，目前中文水平约为 HSK 四级，将于 2026 年 11 月参加 HSK 四级考试。本页中文内容借助翻译工具完成，如有不当之处，敬请谅解。",
+      "我在米纳斯吉拉斯联邦大学（UFMG）孔子学院学习中文，目前中文水平约为 HSK 四级。本页中文内容借助翻译工具完成，如有不当之处，敬请谅解。",
     ],
     interestsTitle: "研究兴趣",
     interests: ["组合优化", "元启发式算法（遗传算法、变邻域搜索）", "学习优化（learning to optimize）与面向路径问题的强化学习", "面向工业决策支持的大语言模型多智能体系统"],
@@ -165,7 +165,7 @@ const text = {
     educationTitle: "教育背景",
     education: [
       { what: "计算机科学专业本科（理学学士，在读），米纳斯吉拉斯天主教大学（PUC Minas），巴西", when: "2023 年 – 2026 年 12 月（预计）", detail: "毕业论文：带时间窗和充电站逐步部署的多周期无人机路径优化，指导教师为 Zenilton K. G. do Patrocínio 教授。部分课程成绩（满分 100 分，60 分及格）：毕业设计（一）98 分、算法设计与分析 88 分、人工智能 82 分、图论与可计算性 80 分。" },
-      { what: "中文学习，米纳斯吉拉斯联邦大学（UFMG）孔子学院", when: "2024 年至今", detail: "目前中文水平约为 HSK 四级，将于 2026 年 11 月参加 HSK 四级考试。" },
+      { what: "中文学习，米纳斯吉拉斯联邦大学（UFMG）孔子学院", when: "2024 年至今", detail: "目前中文水平约为 HSK 四级。" },
     ],
     experienceTitle: "工作经历",
     experience: [
@@ -218,7 +218,7 @@ const text = {
     educationTitle: "Formação",
     education: [
       { what: "Bacharelado em Ciência da Computação, PUC Minas", when: "2023 – dez. 2026 (previsto)", detail: "TCC: roteamento multi-período de drones com janelas de tempo e disponibilização gradual de estações de recarga, orientado pelo Prof. Zenilton K. G. do Patrocínio. Notas selecionadas (de 100): TCC I 98, Projeto e Análise de Algoritmos 88, Inteligência Artificial 82, Teoria dos Grafos e Computabilidade 80." },
-      { what: "Mandarim, Instituto Confúcio da UFMG", when: "2024 – atual", detail: "Nível HSK 4; prova do HSK 4 em novembro de 2026." },
+      { what: "Mandarim, Instituto Confúcio da UFMG", when: "2024 – atual", detail: "Nível HSK 4." },
     ],
     experienceTitle: "Experiência",
     experience: [
