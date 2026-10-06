@@ -178,13 +178,13 @@ const Profile = ({ lang }) => {
         </Section>
 
         <Section id="skills" title={t.skillsTitle}>
-          <dl className="space-y-3">
+          <dl className="grid gap-y-4 sm:grid-cols-[max-content_minmax(0,1fr)] sm:gap-x-6 sm:gap-y-3">
             {t.skills.map((s) => {
               const separator = s.search(/[:：]/);
               return (
-                <div key={s} className="grid gap-x-5 sm:grid-cols-[11rem_1fr]">
+                <div key={s} className="grid gap-y-1 sm:contents">
                   <dt className="font-medium text-slate-900">{s.slice(0, separator)}</dt>
-                  <dd className="text-slate-700">{s.slice(separator + 1).trim()}</dd>
+                  <dd className="min-w-0 text-slate-700">{s.slice(separator + 1).trim()}</dd>
                 </div>
               );
             })}
