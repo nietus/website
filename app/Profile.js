@@ -60,10 +60,6 @@ const Profile = ({ lang }) => {
           </div>
         </header>
 
-        <p className="mt-6 rounded border-l-4 border-blue-700 bg-blue-50 px-4 py-3 text-slate-800">
-          {t.intent}
-        </p>
-
         <p className="mt-4 text-sm text-slate-700">
           {t.emailLabel}:{" "}
           <a href={`mailto:${EMAIL}`} className="font-mono text-blue-700 underline">
